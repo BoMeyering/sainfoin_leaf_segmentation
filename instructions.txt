@@ -1,0 +1,17 @@
+make json export
+image_ID
+{
+    Index
+    {
+        RGB:mask type
+    }
+}
+
+
+make csv for bounding boxes
+use cv2.BoundRect()
+image_ID1
+mask1,x1,y1,x2,y2
+mask2,x1,y1,x2,y2...
+image_ID2
+
