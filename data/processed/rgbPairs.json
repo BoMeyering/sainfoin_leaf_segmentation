@@ -1,118 +1,4 @@
 {
-    "cllay52w71sjs07a0ako4cy6t": {
-        "2": {
-            "rgb": [
-                88,
-                44,
-                75
-            ],
-            "class": "leaflet"
-        },
-        "3": {
-            "rgb": [
-                231,
-                227,
-                32
-            ],
-            "class": "leaflet"
-        },
-        "4": {
-            "rgb": [
-                171,
-                132,
-                196
-            ],
-            "class": "pinched_leaflet"
-        },
-        "5": {
-            "rgb": [
-                221,
-                162,
-                152
-            ],
-            "class": "leaflet"
-        },
-        "6": {
-            "rgb": [
-                222,
-                94,
-                90
-            ],
-            "class": "leaflet"
-        },
-        "7": {
-            "rgb": [
-                59,
-                123,
-                65
-            ],
-            "class": "leaflet"
-        },
-        "8": {
-            "rgb": [
-                22,
-                186,
-                209
-            ],
-            "class": "folded_leaflet"
-        },
-        "9": {
-            "rgb": [
-                251,
-                133,
-                101
-            ],
-            "class": "leaflet"
-        },
-        "10": {
-            "rgb": [
-                175,
-                51,
-                118
-            ],
-            "class": "leaflet"
-        },
-        "11": {
-            "rgb": [
-                216,
-                117,
-                152
-            ],
-            "class": "leaflet"
-        },
-        "12": {
-            "rgb": [
-                56,
-                18,
-                19
-            ],
-            "class": "leaflet"
-        },
-        "13": {
-            "rgb": [
-                29,
-                135,
-                112
-            ],
-            "class": "leaflet"
-        },
-        "14": {
-            "rgb": [
-                126,
-                127,
-                56
-            ],
-            "class": "leaflet"
-        },
-        "15": {
-            "rgb": [
-                35,
-                17,
-                220
-            ],
-            "class": "petiole"
-        }
-    },
     "cllay52vc1rb407a06rxa4gp6": {
         "1": {
             "rgb": [
@@ -64839,6 +64725,120 @@
                 53,
                 164,
                 35
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71sjs07a0ako4cy6t": {
+        "2": {
+            "rgb": [
+                88,
+                44,
+                75
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                231,
+                227,
+                32
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                171,
+                132,
+                196
+            ],
+            "class": "pinched_leaflet"
+        },
+        "5": {
+            "rgb": [
+                221,
+                162,
+                152
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                222,
+                94,
+                90
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                59,
+                123,
+                65
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                22,
+                186,
+                209
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                251,
+                133,
+                101
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                175,
+                51,
+                118
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                216,
+                117,
+                152
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                56,
+                18,
+                19
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                29,
+                135,
+                112
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                126,
+                127,
+                56
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                35,
+                17,
+                220
             ],
             "class": "petiole"
         }
