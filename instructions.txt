@@ -15,3 +15,19 @@ mask1,x1,y1,x2,y2
 mask2,x1,y1,x2,y2...
 image_ID2
 
+
+
+make two datasets one for training and one for validation use 
+https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
+to split the data
+use stratification https://scikit-learn.org/stable/modules/cross_validation.html#stratification
+imagesplit csv
+imageName, Number of objects defined, # in each class
+
+dataset https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html
+boxes - from the CSV
+labels - just a list
+masks - stack of images (tensor) each image with one mask that corosponds to the labels list
+
+dataloader
+add transformations before returning 
