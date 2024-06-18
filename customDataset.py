@@ -27,6 +27,7 @@ print(validationArray)
 
 class ValidatinDataset(torch.utils.data.Dataset):
     def __init__(self,boundingBoxes,rgbJson,imageFolder, validationIndexes, mapDict):
+        #read CSV to a panda with column names
         self.boundingBoxes = pd.read_csv(boundingBoxes,names=['id','index','x1','y1','x2','y2'])
         self.rgbPairs = json.load(open(rgbJson,'r'))
         self.imageFolder = imageFolder
@@ -40,12 +41,28 @@ class ValidatinDataset(torch.utils.data.Dataset):
         #boxes from CSV
         #
 
+        #convert the validation index to an index from the full array so the id can be retrieved
         trueIndex = self.subSet[idx]
+        #get the id of image maching the index
         id = self.mapDict[trueIndex]
+        #read in the image
         image = cv2.imread(self.imageFolder + id + '.png')
-        matches = list()
-        print(self.boundingBoxes.loc[self.boundingBoxes['id'].str.contains(id)])
-        boxTensor = torch.Tensor(matches[2:])
+        #search for the bounding boxes associated with the id
+        matches = (self.boundingBoxes.loc[self.boundingBoxes['id'].str.contains(id)])
+        #preallocate the tensor using zeros
+        boxTensor = torch.zeros(len(matches),4)
+        #use a loop to fill the tensor using the colums of the matches dataframe
+        #note that the row indicies of the dataframe are the same as in the origional CSV and are
+        #threfore require n to be used as an iterator variable fo the box tensor
+        n = 0
+        print(matches['x1'])
+        for i,row in matches.iterrows():
+            print(row['x1'])
+            boxTensor[n][0] = row['x1']
+            boxTensor[n][1] = row['y1']
+            boxTensor[n][2] = row['x2']
+            boxTensor[n][3] = row['y2']
+            n = n+1
         return boxTensor
             
 
