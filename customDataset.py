@@ -6,7 +6,23 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 import cv2
 import torch
-import torchvision
+import matplotlib.pyplot as plt
+import torchvision.transforms.functional as F
+from PIL import Image
+from torchvision.utils import draw_bounding_boxes
+
+
+plt.rcParams["savefig.bbox"] = 'tight'
+def show(imgs):
+    if not isinstance(imgs, list):
+        imgs = [imgs]
+    fig, axs = plt.subplots(ncols=len(imgs), squeeze=False)
+    for i, img in enumerate(imgs):
+        img = img.detach()
+        img = F.to_pil_image(img)
+        img.show
+        axs[0, i].imshow(np.asarray(img))
+        axs[0, i].set(xticklabels=[], yticklabels=[], xticks=[], yticks=[])
 
 
 def splitData(rgbJson):
@@ -23,7 +39,7 @@ def splitData(rgbJson):
     return mapDict, splits[0], splits[1]
     
 mapDict,trainArray,validationArray = splitData('data/processed/rgbPairs.json')
-print(validationArray)
+#print(validationArray)
 
 class ValidatinDataset(torch.utils.data.Dataset):
     def __init__(self,boundingBoxes,rgbJson,imageFolder, validationIndexes, mapDict):
@@ -45,31 +61,105 @@ class ValidatinDataset(torch.utils.data.Dataset):
         trueIndex = self.subSet[idx]
         #get the id of image maching the index
         id = self.mapDict[trueIndex]
-        #read in the image
+        #read in the image for openCV and torch vision
         image = cv2.imread(self.imageFolder + id + '.png')
+        torchImage = read_image(self.imageFolder + id + '.png')
         #search for the bounding boxes associated with the id
         matches = (self.boundingBoxes.loc[self.boundingBoxes['id'].str.contains(id)])
         #preallocate the tensor using zeros
         boxTensor = torch.zeros(len(matches),4)
         #use a loop to fill the tensor using the colums of the matches dataframe
         #note that the row indicies of the dataframe are the same as in the origional CSV and are
-        #threfore require n to be used as an iterator variable fo the box tensor
+        #threfore require n to be used as an iterator variable for the box tensor
         n = 0
-        print(matches['x1'])
         for i,row in matches.iterrows():
-            print(row['x1'])
             boxTensor[n][0] = row['x1']
             boxTensor[n][1] = row['y1']
             boxTensor[n][2] = row['x2']
             boxTensor[n][3] = row['y2']
             n = n+1
-        return boxTensor
+
+        labelTensor = torch.zeros(len(boxTensor))
+
+        
+        maskTensor = torch.zeros(len(boxTensor),image.shape[0],image.shape[1])
+        indexDic = self.rgbPairs[id]
+        print(id)
+        print(indexDic)
+
+        n = 0
+        for key in indexDic:
+            strLabel = indexDic[key]['class']
+            intLabel = 0
+            if strLabel == 'leaflet': intLabel = 1
+            elif strLabel == 'petiole': intLabel = 2
+            elif strLabel == 'folded_leaflet': intLabel = 3
+            elif strLabel == 'pinched_leaflet': intLabel = 4
+            labelTensor[n] = intLabel
+            
+
+            #get the color of the anotation
+            rgb = indexDic[key]['rgb']
+            bgr = rgb[::-1]
+            bgr = np.array(bgr,dtype=np.uint8)
+            # create a black and white mask image that contains only the anotation
+            mask = cv2.inRange(image, bgr, bgr)
+            imageTensor = torch.Tensor(mask)
+            maskTensor[n] = imageTensor
+
+            n = n+1
+        print(labelTensor)
+
+        # for i in range(1,len(boxTensor)):
+        #     strLabel = indexDic[str(i)]
+        #     intLabel = 0
+        #     if strLabel == 'leaflet': intLabel = 1
+        #     elif strLabel == 'petiole': intLabel = 2
+        #     elif strLabel == 'folded_leaflet': intLabel = 3
+        #     elif strLabel == 'pinched_leaflet': intLabel = 4
+        #     labelTensor[i-1] = intLabel
+        
+
+        # maskTensor = torch.Tensor()
+
+        # image = cv2.imread(self.imageFolder + id + '.png')
+        # #for each index AKA annotation
+        # for index in self.rgbPairs[id]:
+        #     #get the color of the anotation
+        #     rgb = self.rgbPairs[id][index]['rgb']
+        #     bgr = rgb[::-1]
+        #     bgr = np.array(bgr,dtype=np.uint8)
+        #     # create a black and white mask image that contains only the anotation
+        #     mask = cv2.inRange(image, bgr, bgr)
+        #     imageTensor = torch.Tensor(mask)
+        #     maskTensor.cat(imageTensor)
+
+        image_id = idx
+        area = (boxTensor[:, 3] - boxTensor[:, 1]) * (boxTensor[:, 2] - boxTensor[:, 0])
+        # suppose all instances are not crowd
+        iscrowd = torch.zeros((len(boxTensor),), dtype=torch.int64)
+
+        
+        target = {}
+        target['boxes'] = boxTensor
+        target['masks'] = maskTensor
+        target['labels'] = intLabel
+        target['image_id'] = image_id
+        target['area'] = area
+        target['iscrowd'] = iscrowd
+
+        return torchImage, target
             
 
         return 0
 vds = ValidatinDataset('data/processed/boundingBoxes.csv','data/processed/rgbPairs.json','data/raw/segmentedImages/',validationArray,mapDict)
-print(vds.__len__())
-print(vds.__getItem__(14))
+#print(vds.__len__())
+item = vds.__getItem__(4)
+
+result = draw_bounding_boxes(item[0][:3], item[1]['boxes'], width=5)
+F.to_pil_image(result).show()
+show(result)
+
 
 class TrainingDataset(torch.utils.data.Dataset):
     def __init__(self, annotations_file, img_dir):
