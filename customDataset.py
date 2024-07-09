@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import torchvision.transforms.functional as F
 from PIL import Image
 from torchvision.utils import draw_bounding_boxes
+import torchvision.tv_tensors._mask
 
 
 plt.rcParams["savefig.bbox"] = 'tight'
@@ -23,6 +24,14 @@ def show(imgs):
         img.show
         axs[0, i].imshow(np.asarray(img))
         axs[0, i].set(xticklabels=[], yticklabels=[], xticks=[], yticks=[])
+
+
+
+def show_img(img):
+     cv2.namedWindow('test', cv2.WINDOW_NORMAL)
+     cv2.imshow('test', img)
+     cv2.waitKey()
+     cv2.destroyAllWindows()
 
 
 def splitData(rgbJson):
@@ -79,22 +88,30 @@ class ValidatinDataset(torch.utils.data.Dataset):
             boxTensor[n][3] = row['y2']
             n = n+1
 
+        #1D tensor of lables corosponding to the boxes and masks initilized to zeros
         labelTensor = torch.zeros(len(boxTensor))
-
-        
-        maskTensor = torch.zeros(len(boxTensor),image.shape[0],image.shape[1])
+        #(N,H,W) tensor of the masks initilized to zeros
+        #(len(boxTensor),image.shape[0],image.shape[1])
+        #maskTensor = torchvision.tv_tensors.Mask((len(boxTensor),5000))
+        #pre access the dictionary corosponding to the image id
         indexDic = self.rgbPairs[id]
         print(id)
         print(indexDic)
 
+        maskStack = list()
+
+        #Use n to access tensors during each iteratiion
         n = 0
         for key in indexDic:
+            #get the value associated with the key
             strLabel = indexDic[key]['class']
+            #assign an integer lable to each class
             intLabel = 0
             if strLabel == 'leaflet': intLabel = 1
             elif strLabel == 'petiole': intLabel = 2
             elif strLabel == 'folded_leaflet': intLabel = 3
             elif strLabel == 'pinched_leaflet': intLabel = 4
+            #store the class in the label tensor at index n
             labelTensor[n] = intLabel
             
 
@@ -104,8 +121,7 @@ class ValidatinDataset(torch.utils.data.Dataset):
             bgr = np.array(bgr,dtype=np.uint8)
             # create a black and white mask image that contains only the anotation
             mask = cv2.inRange(image, bgr, bgr)
-            imageTensor = torch.Tensor(mask)
-            maskTensor[n] = imageTensor
+            maskStack.append(mask)
 
             n = n+1
         print(labelTensor)
@@ -134,12 +150,17 @@ class ValidatinDataset(torch.utils.data.Dataset):
         #     imageTensor = torch.Tensor(mask)
         #     maskTensor.cat(imageTensor)
 
+        #make the unique image id the same as the index
         image_id = idx
+        #calculate the area of the box tensor for the area tensor
         area = (boxTensor[:, 3] - boxTensor[:, 1]) * (boxTensor[:, 2] - boxTensor[:, 0])
-        # suppose all instances are not crowd
+        #assume all instances are not crowd
         iscrowd = torch.zeros((len(boxTensor),), dtype=torch.int64)
 
-        
+        maskArray = np.array(maskStack)
+        maskTensor = torchvision.tv_tensors.Mask(maskArray)
+
+        #assemble the target dictionary
         target = {}
         target['boxes'] = boxTensor
         target['masks'] = maskTensor
@@ -149,17 +170,19 @@ class ValidatinDataset(torch.utils.data.Dataset):
         target['iscrowd'] = iscrowd
 
         return torchImage, target
-            
 
-        return 0
-vds = ValidatinDataset('data/processed/boundingBoxes.csv','data/processed/rgbPairs.json','data/raw/segmentedImages/',validationArray,mapDict)
+vds = ValidatinDataset('data/processed/boundingBoxesBackup.csv','data/processed/rgbPairs.json','data/raw/segmentedImages/',validationArray,mapDict)
 #print(vds.__len__())
 item = vds.__getItem__(4)
 
-result = draw_bounding_boxes(item[0][:3], item[1]['boxes'], width=5)
-F.to_pil_image(result).show()
-show(result)
+# result = draw_bounding_boxes(item[0][:3], item[1]['boxes'], width=5)
+# F.to_pil_image(result).show()
+for i in item[1]['masks']:
+    F.to_pil_image(i).show()
+    input("Press enter to continue")
+# show(result)
 
+    
 
 class TrainingDataset(torch.utils.data.Dataset):
     def __init__(self, annotations_file, img_dir):
