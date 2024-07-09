@@ -8,7 +8,7 @@ import cv2
 import torch
 import matplotlib.pyplot as plt
 import torchvision.transforms.functional as F
-from PIL import Image
+from PIL import Image, ImageChops
 from torchvision.utils import draw_bounding_boxes
 import torchvision.tv_tensors._mask
 
@@ -50,13 +50,13 @@ def splitData(rgbJson):
 mapDict,trainArray,validationArray = splitData('data/processed/rgbPairs.json')
 #print(validationArray)
 
-class ValidatinDataset(torch.utils.data.Dataset):
-    def __init__(self,boundingBoxes,rgbJson,imageFolder, validationIndexes, mapDict):
+class customDataset(torch.utils.data.Dataset):
+    def __init__(self,boundingBoxes,rgbJson,imageFolder, indexSubset, mapDict):
         #read CSV to a panda with column names
         self.boundingBoxes = pd.read_csv(boundingBoxes,names=['id','index','x1','y1','x2','y2'])
         self.rgbPairs = json.load(open(rgbJson,'r'))
         self.imageFolder = imageFolder
-        self.subSet = validationIndexes
+        self.subSet = indexSubset
         self.mapDict = mapDict
     def __len__(self):
         return len(self.subSet)
@@ -90,14 +90,13 @@ class ValidatinDataset(torch.utils.data.Dataset):
 
         #1D tensor of lables corosponding to the boxes and masks initilized to zeros
         labelTensor = torch.zeros(len(boxTensor))
-        #(N,H,W) tensor of the masks initilized to zeros
-        #(len(boxTensor),image.shape[0],image.shape[1])
-        #maskTensor = torchvision.tv_tensors.Mask((len(boxTensor),5000))
+
         #pre access the dictionary corosponding to the image id
         indexDic = self.rgbPairs[id]
         print(id)
         print(indexDic)
 
+        #stores the mask images untill they are converted to a tensor
         maskStack = list()
 
         #Use n to access tensors during each iteratiion
@@ -119,36 +118,13 @@ class ValidatinDataset(torch.utils.data.Dataset):
             rgb = indexDic[key]['rgb']
             bgr = rgb[::-1]
             bgr = np.array(bgr,dtype=np.uint8)
-            # create a black and white mask image that contains only the anotation
+            # create a black and white mask image that contains only the anotation and add it to the list
             mask = cv2.inRange(image, bgr, bgr)
             maskStack.append(mask)
 
             n = n+1
         print(labelTensor)
 
-        # for i in range(1,len(boxTensor)):
-        #     strLabel = indexDic[str(i)]
-        #     intLabel = 0
-        #     if strLabel == 'leaflet': intLabel = 1
-        #     elif strLabel == 'petiole': intLabel = 2
-        #     elif strLabel == 'folded_leaflet': intLabel = 3
-        #     elif strLabel == 'pinched_leaflet': intLabel = 4
-        #     labelTensor[i-1] = intLabel
-        
-
-        # maskTensor = torch.Tensor()
-
-        # image = cv2.imread(self.imageFolder + id + '.png')
-        # #for each index AKA annotation
-        # for index in self.rgbPairs[id]:
-        #     #get the color of the anotation
-        #     rgb = self.rgbPairs[id][index]['rgb']
-        #     bgr = rgb[::-1]
-        #     bgr = np.array(bgr,dtype=np.uint8)
-        #     # create a black and white mask image that contains only the anotation
-        #     mask = cv2.inRange(image, bgr, bgr)
-        #     imageTensor = torch.Tensor(mask)
-        #     maskTensor.cat(imageTensor)
 
         #make the unique image id the same as the index
         image_id = idx
@@ -157,6 +133,7 @@ class ValidatinDataset(torch.utils.data.Dataset):
         #assume all instances are not crowd
         iscrowd = torch.zeros((len(boxTensor),), dtype=torch.int64)
 
+        #convert the list of images to an array then to a tensor
         maskArray = np.array(maskStack)
         maskTensor = torchvision.tv_tensors.Mask(maskArray)
 
@@ -171,34 +148,26 @@ class ValidatinDataset(torch.utils.data.Dataset):
 
         return torchImage, target
 
-vds = ValidatinDataset('data/processed/boundingBoxesBackup.csv','data/processed/rgbPairs.json','data/raw/segmentedImages/',validationArray,mapDict)
+vds = customDataset('data/processed/boundingBoxesBackup.csv','data/processed/rgbPairs.json','data/raw/segmentedImages/',validationArray,mapDict)
 #print(vds.__len__())
-item = vds.__getItem__(4)
 
-# result = draw_bounding_boxes(item[0][:3], item[1]['boxes'], width=5)
-# F.to_pil_image(result).show()
-for i in item[1]['masks']:
-    F.to_pil_image(i).show()
-    input("Press enter to continue")
-# show(result)
+tds = customDataset('data/processed/boundingBoxesBackup.csv','data/processed/rgbPairs.json','data/raw/segmentedImages/',trainArray,mapDict)
 
-    
+def showItem(index, dataset):
+    item = dataset.__getItem__(index)
 
-class TrainingDataset(torch.utils.data.Dataset):
-    def __init__(self, annotations_file, img_dir):
-        #in format ID,index,x1,x2,x3,x4
-        self.img_labels = pd.read_csv(annotations_file)
-        self.img_dir = img_dir
+    #show the color mask with bounding boxes
+    result = draw_bounding_boxes(item[0][:3], item[1]['boxes'], width=5)
+    F.to_pil_image(result).show()
+    img = F.to_pil_image(item[1]['masks'][0])
 
-    def __len__(self):
-        return len(self.img_labels)
+    #show the black and white tensor mask 
+    for i in item[1]['masks']:
+        img = ImageChops.add(img,F.to_pil_image(i))
+        #input("Press enter to continue")
+    img.show()
 
-    def __getitem__(self, idx):
-        img_path = os.path.join(self.img_dir, self.img_labels.iloc[idx, 0])
-        image = read_image(img_path)
-        label = self.img_labels.iloc[idx, 1]
-        if self.transform:
-            image = self.transform(image)
-        if self.target_transform:
-            label = self.target_transform(label)
-        return image, label
+
+for i in range(len(tds)):
+    showItem(i,tds)
+    input("Press enter for next photo")
