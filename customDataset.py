@@ -50,7 +50,7 @@ def splitData(rgbJson):
 mapDict,trainArray,validationArray = splitData('data/processed/rgbPairs.json')
 #print(validationArray)
 
-class customDataset(torch.utils.data.Dataset):
+class CustomDataset(torch.utils.data.Dataset):
     def __init__(self,boundingBoxes,rgbJson,imageFolder, indexSubset, mapDict):
         #read CSV to a panda with column names
         self.boundingBoxes = pd.read_csv(boundingBoxes,names=['id','index','x1','y1','x2','y2'])
@@ -60,7 +60,7 @@ class customDataset(torch.utils.data.Dataset):
         self.mapDict = mapDict
     def __len__(self):
         return len(self.subSet)
-    def __getItem__(self,idx):
+    def __getitem__(self,idx):
         #given an index look up the corosponding image
         #make a tuple of the image and a dictionary containing:
         #boxes from CSV
@@ -94,7 +94,7 @@ class customDataset(torch.utils.data.Dataset):
         #pre access the dictionary corosponding to the image id
         indexDic = self.rgbPairs[id]
         print(id)
-        print(indexDic)
+        #print(indexDic)
 
         #stores the mask images untill they are converted to a tensor
         maskStack = list()
@@ -123,7 +123,7 @@ class customDataset(torch.utils.data.Dataset):
             maskStack.append(mask)
 
             n = n+1
-        print(labelTensor)
+        #print(labelTensor)
 
 
         #make the unique image id the same as the index
@@ -148,26 +148,27 @@ class customDataset(torch.utils.data.Dataset):
 
         return torchImage, target
 
-vds = customDataset('data/processed/boundingBoxesBackup.csv','data/processed/rgbPairs.json','data/raw/segmentedImages/',validationArray,mapDict)
-#print(vds.__len__())
+# vds = CustomDataset('data/processed/boundingBoxesBackup.csv','data/processed/rgbPairs.json','data/raw/segmentedImages/',validationArray,mapDict)
 
-tds = customDataset('data/processed/boundingBoxesBackup.csv','data/processed/rgbPairs.json','data/raw/segmentedImages/',trainArray,mapDict)
+tds = CustomDataset('data/processed/boundingBoxesBackup.csv','data/processed/rgbPairs.json','data/raw/segmentedImages/',trainArray,mapDict)
 
-def showItem(index, dataset):
-    item = dataset.__getItem__(index)
+item = tds[2]
 
-    #show the color mask with bounding boxes
-    result = draw_bounding_boxes(item[0][:3], item[1]['boxes'], width=5)
-    F.to_pil_image(result).show()
-    img = F.to_pil_image(item[1]['masks'][0])
+# def showItem(index, dataset):
+#     item = dataset.__getItem__(index)
 
-    #show the black and white tensor mask 
-    for i in item[1]['masks']:
-        img = ImageChops.add(img,F.to_pil_image(i))
-        #input("Press enter to continue")
-    img.show()
+#     #show the color mask with bounding boxes
+#     result = draw_bounding_boxes(item[0][:3], item[1]['boxes'], width=5)
+#     F.to_pil_image(result).show()
+#     img = F.to_pil_image(item[1]['masks'][0])
+
+#     #show the black and white tensor mask 
+#     for i in item[1]['masks']:
+#         img = ImageChops.add(img,F.to_pil_image(i))
+#         #input("Press enter to continue")
+#     img.show()
 
 
-for i in range(len(tds)):
-    showItem(i,tds)
-    input("Press enter for next photo")
+# for i in range(len(tds)):
+#     showItem(i,tds)
+#     input("Press enter for next photo")
