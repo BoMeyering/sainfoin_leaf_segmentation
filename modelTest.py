@@ -24,7 +24,7 @@ data_loader = torch.utils.data.DataLoader(
 images, targets = tds[0]
 #print(targets['boxes'])
 
-images = cv2.imread('data/raw/segmentedImages/PI313023_001.jpg')
+#images = cv2.imread('data/raw/segmentedImages/PI313023_001.jpg')
 
 target = {'boxes': torch.tensor([4,5,6,7])}
 target['masks'] = torchvision.tv_tensors.Image(cv2.imread('data/raw/segmentedImages/cllay52w31scw07a0hfuragq4.png'))
@@ -33,16 +33,14 @@ target['image_id'] = torch.tensor([1])
 target['area'] = torch.tensor([2])
 target['iscrowd'] = torch.tensor([0])
 
-print(type(target))
-print(type(targets))
 
-targets = list()
-targets.append(target)
-targets.append(target)
+t = list()
+t.append(targets)
 
+i = list()
+i.append(images)
 
-
-# for target in targets:
+# for target in t:
 #     boxes = target["boxes"]
 #     if isinstance(boxes, torch.Tensor):
 #         torch._assert(
@@ -51,5 +49,5 @@ targets.append(target)
 #         )
 
 
-output = model(images, targets)  # Returns losses and detections
+output = model(i, t)  # Returns losses and detections
 print(output)

@@ -172,11 +172,17 @@ class CustomDataset(torch.utils.data.Dataset):
         #assume all instances are not crowd
         iscrowd = torch.zeros((len(boxTensor),), dtype=torch.int64)
 
+        boxArray = np.array(boxTensor)
+        boxTensor = torch.tensor(boxArray)
+        labelArray = np.array(labelTensor)
+        labelTensor = torch.tensor(labelArray,dtype=torch.int64)
+
         #convert the list of images to an array then to a tensor
         maskArray = np.array(maskList)
         maskTensor = torchvision.tv_tensors.Mask(maskArray)
 
-        torchImage = torchvision.tv_tensors.Image(maskImage)
+        torchImage = torchvision.tv_tensors.Image(image)
+        torchImage = np.transpose(torchImage, axes=(2, 0, 1))
 
         #assemble the target dictionary
         target = {0: 'test'}
@@ -192,7 +198,14 @@ class CustomDataset(torch.utils.data.Dataset):
 # vds = CustomDataset('data/processed/boundingBoxesBackup.csv','data/processed/rgbPairs.json','data/raw/origionalImages/','data/raw/segmentedImages/',validationArray,mapDict)
 
 # tds = CustomDataset('data/processed/boundingBoxesBackup.csv','data/processed/rgbPairs.json','data/raw/origionalImages/','data/raw/segmentedImages/',trainArray,mapDict)
-
+# img, item = tds[1]
+# print('image:' + str(img.shape))
+# print('boxes:' + str(item['boxes'].shape))
+# print('masks:' + str(item['masks'].shape))
+# print('labels:' + str(item['labels'].shape))
+# print('image_id:' + str(item['image_id']))
+# print('area:' + str(item['area'].shape))
+# print('iscrowd' + str(item['iscrowd'].shape))
 
 # def showItem(index, dataset):
 #     item = dataset[index]
