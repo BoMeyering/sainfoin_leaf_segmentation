@@ -1,5 +1,4 @@
-import matplotlib.pyplot as plt
-import exampleCode.utils as utils
+
 import customDataset as cd
 import torchvision.tv_tensors
 import customDataset as cd
@@ -17,9 +16,11 @@ from torchvision.utils import draw_bounding_boxes
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 from torchvision.models.detection.mask_rcnn import MaskRCNNPredictor
 
+#load in a validatin data set to get images from
 mapDict,trainArray,validationArray = cd.splitData('data/processed/rgbPairs.json')
 vds = cd.CustomDataset('data/processed/boundingBoxesBackup.csv','data/processed/rgbPairs.json','data/raw/origionalImages/','data/raw/segmentedImages/',trainArray,mapDict,validation=True)
 
+#from the example sets up the model with the number of classes
 def get_model_instance_segmentation(num_classes):
     # load an instance segmentation model pre-trained on COCO
     model = torchvision.models.detection.maskrcnn_resnet50_fpn(weights="DEFAULT")
@@ -38,54 +39,50 @@ def get_model_instance_segmentation(num_classes):
         hidden_layer,
         num_classes
     )
-
     return model
 
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 #model = torchvision.models.detection.maskrcnn_resnet50_fpn(weights="DEFAULT")
+#numbere of classes includes the background
 num_classes = 5
+#get the model
 model = get_model_instance_segmentation(num_classes)
-checkpoint = torch.load('model_checkpoints/1024_V2_24.tar')
+#load the model checkpoint
+checkpoint = torch.load('model_checkpoints/1024_V2_Final.tar')
 model.load_state_dict(checkpoint['model_state_dict'])
+#put the model in evaluation mode
 model.eval()
 
+#get images and ids from the dataloader and store them in a list
 images = list()
 ids = list()
 for i in range(4):
     images.append(vds[i][0])
     ids.append(vds[i][1]['imageID'])
 
+#run the model on the imges
 with torch.no_grad():
-    # convert RGBA -> RGB and move to device
-    #i = images.to(device)
     predictions = model(images)
-    # pred = predictions[0]
+    
 
-
-def filterOutput(predictions,minScore,minIou):
+#filters the output of the model using ZFTurbo's weight-boxes-fusion
+#minScore: minimum score for a bounding box to be concidered
+#minIou: how much bounding boxes can overlap
+#maskThreash: removes bad masks .3 to .7 works well
+#the dimentions of the image width and height must  be the same
+def filterOutput(predictions,minScore,minIou,maskThreash,imgDimentions):
     ret = list()
     for i in range(4):
         pred = predictions[i]
 
         img = torch.tensor(images[i],dtype=torch.uint8)
-        #masks = pred['masks']
-        masks = (pred["masks"] > 0.3).squeeze(1)
+        #removes low confidence masks
+        masks = (pred["masks"] > maskThreash).squeeze(1)
         scores = pred['scores']
         boxes = pred['boxes']
         labels = pred['labels']
 
-        boxes = boxes/1024
-
-        # boxList = list()
-        # maskList = list()
-        # scoreList = list()
-        # labelList = list()
-        # for j in range(len(scores)):
-        #     if scores[j] > minScore:
-        #         scoreList.append(scores[j])
-        #         boxList.append(boxes[j])
-        #         maskList.append(masks[j])
-        #         labelList.append(labels[j])
+        boxes = boxes/imgDimentions
  
         boxes, newScores, labels = weighted_boxes_fusion([boxes], [scores], [labels], weights=None, iou_thr=minIou, skip_box_thr=minScore)
 
@@ -102,62 +99,72 @@ def filterOutput(predictions,minScore,minIou):
         ret.append([boxes,newScores,labels,maskList])
     return ret
 
-def showOutput(filteredList,images):
+#displays a 4X4 grid of four imges, each with the origional, the training mask,
+#predicted boudning boxes, and predicted masks
+#filteredList: the filtered output of the model predicitons
+#images: the images from the dataloader
+#imgDimentions: the dimentions of the images must be the same width and height
+#rgbPairsJson: location of the rgbPairsJson file
+#the allowable ammount of overlap a new mask can have with those already in the image 1 is 50% 0 is 100%
+def showOutput(filteredList,images,imgDimentions,rgbPairsJson,maskOverlap):
+    
+    rgbDict = json.load(open(rgbPairsJson,'r'))
 
-    rgbDict = json.load(open('data/processed/rgbPairs.json','r'))
-
-
+    #imageList holds all images that will go in the grid
     imageList = list()
+    #define colors for showing each class
     colors = [[255,0,0],[0,255,0],[0,0,255],[128,128,0],[0,128,128]]
-    #colors = [[255,255,255],[255,255,255],[255,255,255],[255,255,255]]
-    for i in range(len(filteredList)):
 
+    for i in range(len(filteredList)):
+        #read in the origional image and the associated mask
         maskImage = cv2.imread('data/raw/segmentedImages/' + ids[i] + '.png')
         image = cv2.imread('data/raw/origionalImages/' + rgbDict[ids[i]]['externalID'],flags= cv2.IMREAD_COLOR + cv2.IMREAD_IGNORE_ORIENTATION)
-        maskImage = cv2.resize(maskImage, (1024,1024))
-        image = cv2.resize(image, (1024,1024))
+        maskImage = cv2.resize(maskImage, (imgDimentions,imgDimentions))
+        image = cv2.resize(image, (imgDimentions,imgDimentions))
         imageList.append(np.transpose(torchvision.tv_tensors.Image(image), axes=(2,0,1)))
         imageList.append(np.transpose(torchvision.tv_tensors.Image(maskImage), axes=(2,0,1)))
 
-
+        #get the first image from the model
         index = filteredList[i]
         boxes, scores, labels, masks = index
         
-
-
+        #draw the bounding boxes and add them to the image list
         img = torch.tensor(images[i],dtype=torch.uint8)
-        imageList.append(draw_bounding_boxes(img,torch.tensor(boxes*1024,dtype=torch.int64),width=5))
+        imageList.append(draw_bounding_boxes(img,torch.tensor(boxes*imgDimentions,dtype=torch.int64),width=5))
         
-        compositMask = torch.zeros(3,1024,1024)
-        binMask = np.zeros([1024,1024],dtype=np.int8)
-        #print('masks' + str(len(masks)) + ' labels' + str(len(labels)))
+        #The color mask that will be displayed at the end
+        compositMask = torch.zeros(3,imgDimentions,imgDimentions)
+        #tracks what parts of the mask already have data in them AKA not background
+        #this allows for masks to be added in order from most to least conficence
+        #excludeing a mask if it overlaps with a higher conficence mask too much
+        binMask = np.zeros([imgDimentions,imgDimentions],dtype=np.int8)
+
+        #loop over all the predicted masks
         for i in range(len(masks)):
 
+            #convert to numpy arrays and compare to the existing mask to check for overlap
             npMask = np.array(masks[i])
-            #print(np.count_nonzero(npMask == 1))
-            #uniqueMask, countsMask = np.unique(npMask, return_counts=True)
             binMaskOnes = np.count_nonzero(binMask == 1)
             evalMask = np.add(npMask,binMask,dtype=np.int8)
             evalOnes = np.count_nonzero(evalMask > 0) - binMaskOnes
             evalTwos = np.count_nonzero(evalMask > 1)
             print('New ones:' +str(evalOnes) + ' New Twos:' + str(evalTwos),)
-            # if evalTwos == 0:
-            #     print('No overlap')
-            # else:
-            #     print('Overlap percent: ' + str(evalOnes/evalTwos))
-  
-            if(evalTwos == 0 or (evalOnes/evalTwos) > .001):
+
+            #if the overlap is too high don't add the new mask
+            if(evalTwos == 0 or (evalOnes/evalTwos) > maskOverlap):
 
                 compositMask[0] = compositMask[0] + masks[i] * colors[int(labels[i]-1)][0]
                 compositMask[1] = compositMask[1] + masks[i] * colors[int(labels[i]-1)][1] 
                 compositMask[2] = compositMask[2] + masks[i] * colors[int(labels[i]-1)][2]
                 binMask = (evalMask >= 1)
+        #add the final assembled mask to the output
         imageList.append(compositMask * 255)
+    #show all the images in a grid
     F.to_pil_image(make_grid(imageList,nrow=4)).show()
 
 
-filtered = filterOutput(predictions, .15, .5)
-showOutput(filtered,images)
+filtered = filterOutput(predictions, .005, .5, .3, 1024)
+showOutput(filtered,images,1024,'data/processed/rgbPairs.json', 1)
 
 
 

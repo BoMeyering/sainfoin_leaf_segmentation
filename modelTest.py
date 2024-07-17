@@ -6,10 +6,11 @@ import torchvision
 import cv2
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 from torchvision.models.detection.mask_rcnn import MaskRCNNPredictor
+import exampleCode.utils as utils
+from exampleCode.engine import train_one_epoch, evaluate
 
 
-
-
+#get the model
 def get_model_instance_segmentation(num_classes):
     # load an instance segmentation model pre-trained on COCO
     model = torchvision.models.detection.maskrcnn_resnet50_fpn(weights="DEFAULT")
@@ -31,63 +32,18 @@ def get_model_instance_segmentation(num_classes):
 
     return model
 
+#get the training dataset and the validation dataset
 mapDict,trainArray,validationArray = cd.splitData('data/processed/rgbPairs.json')
 tds = cd.CustomDataset('data/processed/boundingBoxesBackup.csv','data/processed/rgbPairs.json','data/raw/origionalImages/','data/raw/segmentedImages/',trainArray,mapDict)
 vds = cd.CustomDataset('data/processed/boundingBoxesBackup.csv','data/processed/rgbPairs.json','data/raw/origionalImages/','data/raw/segmentedImages/',validationArray,mapDict,validation=True)
 
-
-# model = torchvision.models.detection.fasterrcnn_resnet50_fpn(weights="DEFAULT")
-# data_loader = torch.utils.data.DataLoader(
-#     tds,
-#     batch_size=2,
-#     shuffle=True,
-#     collate_fn=None
-# )
-
-# # For Training
-# #images, targets = next(iter(data_loader))
-# #images = list(image for image in images)
-# #targets = [{k: v for k, v in t.items()} for t in targets]
-# images, targets = tds[0]
-# #print(targets['boxes'])
-
-# #images = cv2.imread('data/raw/segmentedImages/PI313023_001.jpg')
-
-# target = {'boxes': torch.tensor([4,5,6,7])}
-# target['masks'] = torchvision.tv_tensors.Image(cv2.imread('data/raw/segmentedImages/cllay52w31scw07a0hfuragq4.png'))
-# target['labels'] = torch.tensor([1])
-# target['image_id'] = torch.tensor([1])
-# target['area'] = torch.tensor([2])
-# target['iscrowd'] = torch.tensor([0])
-
-
-# t = list()
-# t.append(targets)
-
-# i = list()
-# i.append(images)
-
-# # for target in t:
-# #     boxes = target["boxes"]
-# #     if isinstance(boxes, torch.Tensor):
-# #         torch._assert(
-# #             len(boxes.shape) == 2 and boxes.shape[-1] == 4,
-# #             f"Expected target boxes to be a tensor of shape [N, 4], got {boxes.shape}.",
-# #         )
-
-
-# output = model(i, t)  # Returns losses and detections
-# print(output)
-
-import exampleCode.utils as utils
-from exampleCode.engine import train_one_epoch, evaluate
 
 
 # train on the GPU or on the CPU, if a GPU is not available
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 #device = torch.device('cpu')
 
-# our dataset has two classes only - background and person
+# number of classes in the dataset
 num_classes = 5
 
 # define training and validation data loaders
@@ -105,8 +61,9 @@ data_loader_test = torch.utils.data.DataLoader(
     collate_fn=utils.collate_fn
 )
 
-# get the model using our helper function
+# get the model
 model = get_model_instance_segmentation(num_classes)
+#use for pure default model note that the result viewer will also need to be modified
 #model = torchvision.models.detection.maskrcnn_resnet50_fpn(weights="DEFAULT")
 
 # move model to the right device
@@ -128,6 +85,7 @@ lr_scheduler = torch.optim.lr_scheduler.StepLR(
     gamma=0.1
 )
 
+#the number of epochs to run
 num_epochs = 31
 
 for epoch in range(num_epochs):
@@ -137,6 +95,7 @@ for epoch in range(num_epochs):
     lr_scheduler.step()
     # evaluate on the test dataset
     evaluate(model, data_loader_test, device=device)
+    #save every 4 epochs
     if epoch % 4 == 0:
         torch.save({
             'epoch': epoch,
@@ -144,7 +103,7 @@ for epoch in range(num_epochs):
             'optimizer_state_dict': optimizer.state_dict()
             }, 'model_checkpoints/1024_V2_'+str(epoch)+'.tar')
 
-
+#save the final model
 torch.save({
             'epoch': epoch,
             'model_state_dict': model.state_dict(),
