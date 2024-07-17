@@ -161,3 +161,6 @@ cython_debug/
 
 #Image folders
 data/raw/
+
+#model folders
+model_checkpoints/

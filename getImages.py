@@ -117,7 +117,8 @@ def MakeImageJson(inputJsonPath, outputJsonPath,silent = False):
         cl = objects[i]['value']
         #make them a key value pair in a dictionary
         rgbDictionary[i] = {'rgb':rgb,'class':cl}
-      #build the dictionary from the image ID and rgb dictionary          
+      #build the dictionary from the image ID and rgb dictionary  
+      rgbDictionary['externalID'] = di['data_row']['external_id']
       buildDictionary[di['data_row']['id']] = rgbDictionary
 
   #open a file to write to
@@ -128,7 +129,7 @@ def MakeImageJson(inputJsonPath, outputJsonPath,silent = False):
   if not silent:
     print(f'wrote {lines} lines to data/processed/rgbPairs.json')
 
-GetImages(projectID='clixbl663083u07zxhfgxgfio', imageFolderPath='data/raw/segmentedImages/', jsonPath='data/raw/exportProject.ndjson')
+#GetImages(projectID='clixbl663083u07zxhfgxgfio', imageFolderPath='data/raw/segmentedImages/', jsonPath='data/raw/exportProject.ndjson')
 MakeImageJson(inputJsonPath='data/raw/exportProject.ndjson', outputJsonPath='data/processed/rgbPairs.json')
 
 
