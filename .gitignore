@@ -164,3 +164,6 @@ data/raw/
 
 #model folders
 model_checkpoints/
+
+#image outputs
+outputs/
