@@ -104,8 +104,13 @@ def showOutput(filteredList,images,imgDimentions,rgbPairsJson,maskOverlap):
 
     #imageList holds all images that will go in the grid
     imageList = list()
+
     #define colors for showing each class
-    colors = [[255,0,0],[0,255,0],[0,0,255],[128,128,0],[0,128,128]]
+    #Red = leaflet
+    #Green = petiole
+    #Blue = folded
+    #Yellow = pinched
+    colors = [[255,0,0],[0,255,0],[0,0,255],[255,232,0],[0,128,128]]
 
     for i in range(len(filteredList)):
         #read in the origional image and the associated mask

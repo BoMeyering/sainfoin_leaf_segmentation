@@ -45,7 +45,7 @@ def splitData(rgbJson):
         i = i+1
 
     fullArrray = np.arange(0,length)
-    splits = train_test_split(fullArrray, test_size=.2, train_size=.8, random_state=None, shuffle=True, stratify=None)
+    splits = train_test_split(fullArrray, test_size=.15, train_size=.85, random_state=None, shuffle=True, stratify=None)
     return mapDict, splits[0], splits[1]
     
 mapDict,trainArray,validationArray = splitData('data/processed/rgbPairs.json')
@@ -63,7 +63,7 @@ class CustomDataset(torch.utils.data.Dataset):
         self.validation = validation
     def __len__(self):
         return len(self.subSet)
-        #return 6
+        #return 24
     def __getitem__(self,idx):
         #given an index look up the corosponding image
         #make a tuple of the image and a dictionary containing:
@@ -117,9 +117,9 @@ class CustomDataset(torch.utils.data.Dataset):
                 elif strLabel == 'folded_leaflet': intLabel = 3
                 elif strLabel == 'pinched_leaflet': intLabel = 4
                 #store the class in the label tensor at index n
+
                 labelTensor[n] = intLabel
                 
-
                 #get the color of the anotation
                 rgb = indexDic[key]['rgb']
                 bgr = rgb[::-1]
@@ -133,13 +133,12 @@ class CustomDataset(torch.utils.data.Dataset):
                 i = 0
 
 
-        target_img_size = 1024
+        target_img_size = 512
         if self.validation:
             transform = A.Compose(
             [
                 A.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
-                A.Resize(height=target_img_size, width=target_img_size, p=1),
-                
+                A.Resize(height=target_img_size, width=target_img_size, p=1),   
             ],
             p=1.0,
             # is_check_shapes=False,
@@ -152,10 +151,11 @@ class CustomDataset(torch.utils.data.Dataset):
                 A.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
                 A.Resize(height=target_img_size, width=target_img_size, p=1),
                 A.HorizontalFlip(p=0.5),
+                A.RandomRotate90(p=.5),
                 #A.ColorJitter(),
                 #A.ChannelShuffle(),
                 A.GaussianBlur(p=.2),
-                A.Affine(translate_percent=(-.10, .10), rotate=(-30, 30), shear=(-15, 15)),
+                A.Affine(translate_percent=(-.10, .10), rotate=(-90, 90), shear=(-15, 15)),
                 
             ],
             p=1.0,

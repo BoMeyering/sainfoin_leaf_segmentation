@@ -43,13 +43,20 @@ vds = cd.CustomDataset('data/processed/boundingBoxesBackup.csv','data/processed/
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 #device = torch.device('cpu')
 
+# file = open('model_checkpoints/debug.txt')
+# if torch.cuda.is_available:
+#     file.write('using GPU')
+# else:
+#     file.write('using CPU')
+# file.close()
+
 # number of classes in the dataset
 num_classes = 5
 
 # define training and validation data loaders
 data_loader = torch.utils.data.DataLoader(
     tds,
-    batch_size=2,
+    batch_size=3,
     shuffle=True,
     collate_fn=utils.collate_fn
 )
@@ -73,7 +80,7 @@ model.to(device)
 params = [p for p in model.parameters() if p.requires_grad]
 optimizer = torch.optim.SGD(
     params,
-    lr=0.001,
+    lr=0.002,
     momentum=0.9,
     weight_decay=0.0005
 )
@@ -82,11 +89,11 @@ optimizer = torch.optim.SGD(
 lr_scheduler = torch.optim.lr_scheduler.StepLR(
     optimizer,
     step_size=3,
-    gamma=0.1
+    gamma=0.5
 )
 
 #the number of epochs to run
-num_epochs = 31
+num_epochs = 50
 
 for epoch in range(num_epochs):
     # train for one epoch, printing every 10 iterations
@@ -96,18 +103,18 @@ for epoch in range(num_epochs):
     # evaluate on the test dataset
     evaluate(model, data_loader_test, device=device)
     #save every 4 epochs
-    if epoch % 4 == 0:
+    if epoch % 10 == 0:
         torch.save({
             'epoch': epoch,
             'model_state_dict': model.state_dict(),
             'optimizer_state_dict': optimizer.state_dict()
-            }, 'model_checkpoints/1024_V2_'+str(epoch)+'.tar')
+            }, 'model_checkpoints/512_AllClassesV1_'+str(epoch)+'.tar')
 
 #save the final model
 torch.save({
             'epoch': epoch,
             'model_state_dict': model.state_dict(),
             'optimizer_state_dict': optimizer.state_dict()
-            }, 'model_checkpoints/1024_V2_Final.tar')
+            }, 'model_checkpoints/512_PetioleOnlyV5_Final.tar')
 
 

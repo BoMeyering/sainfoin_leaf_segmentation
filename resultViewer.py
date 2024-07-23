@@ -44,11 +44,11 @@ def get_model_instance_segmentation(num_classes):
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 #model = torchvision.models.detection.maskrcnn_resnet50_fpn(weights="DEFAULT")
 #numbere of classes includes the background
-num_classes = 5
+num_classes = 2
 #get the model
 model = get_model_instance_segmentation(num_classes)
 #load the model checkpoint
-checkpoint = torch.load('model_checkpoints/1024_V2_Final.tar')
+checkpoint = torch.load('model_checkpoints/512_PetioleOnlyV5_Final.tar')
 model.load_state_dict(checkpoint['model_state_dict'])
 #put the model in evaluation mode
 model.eval()
@@ -112,8 +112,13 @@ def showOutput(filteredList,images,imgDimentions,rgbPairsJson,maskOverlap):
 
     #imageList holds all images that will go in the grid
     imageList = list()
+
     #define colors for showing each class
-    colors = [[255,0,0],[0,255,0],[0,0,255],[128,128,0],[0,128,128]]
+    #Red = leaflet
+    #Green = petiole
+    #Blue = folded
+    #Yellow = pinched
+    colors = [[255,0,0],[0,255,0],[0,0,255],[255,232,0],[0,128,128]]
 
     for i in range(len(filteredList)):
         #read in the origional image and the associated mask
@@ -163,8 +168,8 @@ def showOutput(filteredList,images,imgDimentions,rgbPairsJson,maskOverlap):
     F.to_pil_image(make_grid(imageList,nrow=4)).show()
 
 
-filtered = filterOutput(predictions, .005, .5, .3, 1024)
-showOutput(filtered,images,1024,'data/processed/rgbPairs.json', 1)
+filtered = filterOutput(predictions, .0, .5, .3, 512) 
+showOutput(filtered,images,512,'data/processed/rgbPairs.json', .3)
 
 
 
