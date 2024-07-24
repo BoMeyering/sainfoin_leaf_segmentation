@@ -131,7 +131,7 @@ class CustomDataset(torch.utils.data.Dataset):
                 i = 0
 
 
-        target_img_size = 1024
+        target_img_size = 512
 
         transform = A.Compose(
         [
