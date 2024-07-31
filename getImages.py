@@ -123,13 +123,13 @@ def MakeImageJson(inputJsonPath, outputJsonPath,silent = False):
 
   #open a file to write to
   outFile = open(outputJsonPath,mode='w')
-  #writ the full dictionary to the file
+  #write the full dictionary to the file
   json.dump(buildDictionary,outFile,indent=4)
   outFile.close()
   if not silent:
     print(f'wrote {lines} lines to data/processed/rgbPairs.json')
 
-#GetImages(projectID='clixbl663083u07zxhfgxgfio', imageFolderPath='data/raw/segmentedImages/', jsonPath='data/raw/exportProject.ndjson')
+GetImages(projectID='clixbl663083u07zxhfgxgfio', imageFolderPath='data/raw/segmentedImages/', jsonPath='data/raw/exportProject.ndjson')
 MakeImageJson(inputJsonPath='data/raw/exportProject.ndjson', outputJsonPath='data/processed/rgbPairs.json')
 
 

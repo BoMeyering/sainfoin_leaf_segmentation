@@ -31,3 +31,9 @@ masks - stack of images (tensor) each image with one mask that corosponds to the
 
 dataloader
 add transformations before returning 
+
+
+new class
+    train
+    trainStep
+    trainEpoch

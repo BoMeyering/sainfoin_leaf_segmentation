@@ -133,7 +133,7 @@ class CustomDataset(torch.utils.data.Dataset):
                 i = 0
 
 
-        target_img_size = 512
+        target_img_size = 1024
         if self.validation:
             transform = A.Compose(
             [
@@ -152,7 +152,7 @@ class CustomDataset(torch.utils.data.Dataset):
                 A.Resize(height=target_img_size, width=target_img_size, p=1),
                 A.HorizontalFlip(p=0.5),
                 A.RandomRotate90(p=.5),
-                #A.ColorJitter(),
+                A.ColorJitter(),
                 #A.ChannelShuffle(),
                 A.GaussianBlur(p=.2),
                 A.Affine(translate_percent=(-.10, .10), rotate=(-90, 90), shear=(-15, 15)),
