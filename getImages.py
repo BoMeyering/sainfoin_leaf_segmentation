@@ -11,7 +11,7 @@ import requests
 def json_stream_handler(output: lb.JsonConverterOutput, jsonFile, imagePath = 'data/raw/segmentedImages/', silent = False):
   #convert the json to a dictionary
   line = json.loads(output.json_str)
-  #check for an error where composite_mask does not appear in the json
+  #check for an error where composite_mask does not appear in the json or the image hasn't been anotated yet
   if len(line['projects']['clixbl663083u07zxhfgxgfio']['labels']) > 0 and 'composite_mask' in line['projects']['clixbl663083u07zxhfgxgfio']['labels'][0]['annotations']['objects'][2]:
     #find the mask url in the json
     url = line['projects']['clixbl663083u07zxhfgxgfio']['labels'][0]['annotations']['objects'][2]['composite_mask']['url']
@@ -41,7 +41,7 @@ def GetImages(projectID,imageFolderPath,jsonPath, silent = False):
   # get a project using its project ID
   project = client.get_project(projectID) #replace with clixbl663083u07zxhfgxgfio
 
-  # Set the export params to include/exclude certain fields. 
+  # Set the export params to exclude certain fields. 
   # Do not retrieve any extra information
   export_params= {
     "attachments": False,
@@ -54,7 +54,7 @@ def GetImages(projectID,imageFolderPath,jsonPath, silent = False):
     "embeddings": False
   }
 
-  # Note: Filters follow AND logic, so typically using one filter is sufficient.
+  # Make a filter that should do nothing
   filters= {
     "last_activity_at": ["2000-01-01 00:00:00", "2050-01-01 00:00:00"]
   }
@@ -94,13 +94,13 @@ def MakeImageJson(inputJsonPath, outputJsonPath,silent = False):
 
   buildDictionary = {}
   lines = 0
-#assemble a dictionary in the structure
-# ImageID:{
-#   Index:{
-#     RGB Value, Class
-#   }
-# }
-#
+  #assemble a dictionary in the structure
+  # ImageID:{
+  #   Index:{
+  #     RGB Value, Class
+  #   }
+  # }
+  #
   for line in jsonFile:
     lines += 1
 
@@ -129,6 +129,7 @@ def MakeImageJson(inputJsonPath, outputJsonPath,silent = False):
   if not silent:
     print(f'wrote {lines} lines to data/processed/rgbPairs.json')
 
+#call both functions to get the images and create the rgbJson file
 GetImages(projectID='clixbl663083u07zxhfgxgfio', imageFolderPath='data/raw/segmentedImages/', jsonPath='data/raw/exportProject.ndjson')
 MakeImageJson(inputJsonPath='data/raw/exportProject.ndjson', outputJsonPath='data/processed/rgbPairs.json')
 
