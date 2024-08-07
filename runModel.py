@@ -20,35 +20,9 @@ from torchvision.models.detection.rpn import AnchorGenerator
 from torchvision.models.detection.rpn import RPNHead
 
 
-# #from the example sets up the model with the number of classes
-# def get_model_instance_segmentation(num_classes,checkpoint):
-#     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
-#     # load an instance segmentation model pre-trained on COCO
-#     model = torchvision.models.detection.maskrcnn_resnet50_fpn(weights="DEFAULT")
 
-#     # get number of input features for the classifier
-#     in_features = model.roi_heads.box_predictor.cls_score.in_features
-#     # replace the pre-trained head with a new one
-#     model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
-
-
-#     # now get the number of input features for the mask classifier
-#     in_features_mask = model.roi_heads.mask_predictor.conv5_mask.in_channels
-#     hidden_layer = 256
-#     # and replace the mask predictor with a new one
-#     model.roi_heads.mask_predictor = MaskRCNNPredictor(
-#         in_features_mask,
-#         hidden_layer,
-#         num_classes
-#     )
-#     checkpoint = torch.load(checkpoint)
-#     model.load_state_dict(checkpoint['model_state_dict'])
-#     #put the model in evaluation mode
-#     model.eval()
-#     return model
-
-#from the example sets up the model with the number of classes
-def get_model_instance_segmentation(num_classes,checkpoint):
+#Loads a trianed model from a file
+def get_model_instance_segmentation(checkpoint):
 
     model = torch.load(checkpoint)
     model.eval()
@@ -56,83 +30,36 @@ def get_model_instance_segmentation(num_classes,checkpoint):
     return model
 
 
-
-    # model = torchvision.models.detection.maskrcnn_resnet50_fpn_v2(weights='COCO_V1')
-    
-
-    # #set the anchor box sizes
-    # anchor_generator = AnchorGenerator(
-    #     sizes=(
-    #         (32,), 
-    #         (64,), 
-    #         (128,), 
-    #         (256,), 
-    #         (512,),
-    #     ),
-    #     aspect_ratios=(
-    #         (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
-    #         (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
-    #         (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
-    #         (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
-    #         (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
-    #     )
-    # )
-    # rpn_head = RPNHead(model.backbone.out_channels, anchor_generator.num_anchors_per_location()[0],conv_depth=2)
-    # model.rpn.head = rpn_head
-    # model.rpn.anchor_generator = anchor_generator
-
-
-    # # get number of input features for the classifier
-    # in_features = model.roi_heads.box_predictor.cls_score.in_features
-    # print(in_features)
-    # # replace the pre-trained head with a new one
-    # model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
-
-    # # now get the number of input features for the mask classifier
-    # in_features_mask = model.roi_heads.mask_predictor.conv5_mask.in_channels
-    # print(in_features_mask)
-    # hidden_layer = 256
-    # # and replace the mask predictor with a new one
-    # model.roi_heads.mask_predictor = MaskRCNNPredictor(
-    #     in_features_mask,
-    #     hidden_layer,
-    #     num_classes
-    # )
-
-    # checkpoint = torch.load(checkpoint)
-    # model.load_state_dict(checkpoint['model_state_dict'])
-    # #put the model in evaluation mode
-    # model.eval()
-    
-    # return model
-
-
-
-
-
-
 #filters the output of the model using ZFTurbo's weight-boxes-fusion
 #minScore: minimum score for a bounding box to be concidered
 #minIou: how much bounding boxes can overlap
 #maskThreash: removes bad masks .3 to .7 works well
-#the dimentions of the image width and height must  be the same
+#imgDimetnions: the width and height of the images
+#rainbow: if true the each segment of the output will be assigned a random color
 def filterOutput(predictions,images,minScore,minIou,maskThreash,maskOverlap,imgDimentions,rainbow=False):
+    #the list of images to be saved, each pair of images is combined into a single image before saveing
     imageList = list()
+    #the color to use of different classes
     colors = [[255,0,0],[0,255,0],[0,0,255],[255,232,0],[0,128,128]]
+    #for each prediciton fitler an save images
     for i in range(len(predictions)):
         pred = predictions[i]
 
  
-        #removes low confidence masks
+        #remove low confidence masks
         masks = (pred["masks"] > maskThreash).squeeze(1)
+        #load the scores bounding boxes and labels
         scores = pred['scores']
         boxes = pred['boxes']
         labels = pred['labels']
 
+        #rescale to bounding boxes to work with weighted boxes fusion filtering
         boxes = boxes/imgDimentions
- 
+
+        #filter the bounding boxes
         boxes, newScores, labels = weighted_boxes_fusion([boxes], [scores], [labels], weights=None, iou_thr=minIou, skip_box_thr=minScore)
 
+        #make an new mask list with only the masks left after bounding box filtering in order of confidence
         newScoreIndex = 0
         maskList = []
         for j in range(len(scores)):
@@ -141,11 +68,9 @@ def filterOutput(predictions,images,minScore,minIou,maskThreash,maskOverlap,imgD
                 maskList.append(masks[j])
             if newScoreIndex == len(newScores):
                 break
-
+        
+        #draw the bounding boxes on the origional image and add it to the image list
         img = torch.tensor(images[i],dtype=torch.uint8)
-        # #img = torchvision.tv_tensors.Image(images[i])
-        # img = np.transpose(img, axes=(2, 0, 1))
-        # print(img.shape)
         imageList.append(draw_bounding_boxes(img,torch.tensor(boxes*imgDimentions,dtype=torch.int64),width=5))
         
         #The color mask that will be displayed at the end
@@ -165,7 +90,6 @@ def filterOutput(predictions,images,minScore,minIou,maskThreash,maskOverlap,imgD
             evalMask = np.add(npMask,binMask,dtype=np.int8)
             evalOnes = np.count_nonzero(evalMask > 0) - binMaskOnes
             evalTwos = np.count_nonzero(evalMask > 1)
-            #print('New ones:' +str(evalOnes) + ' New Twos:' + str(evalTwos),)
 
             #if the overlap is too high don't add the new mask
             if(evalTwos == 0 or (evalOnes/evalTwos) > maskOverlap):
@@ -182,6 +106,10 @@ def filterOutput(predictions,images,minScore,minIou,maskThreash,maskOverlap,imgD
         imageList.append(compositMask * 255)
     return imageList
 
+#Scales, normalizes and converts an image to a tensor before sending it to the GPU
+#images: list of images to transform
+#dimentions the dimentions to scale to. Should be the same as the model was trained on
+#device: the device to send the image to. Should be a GPU
 def TransformImages(images,dimentions,device):
     transform = A.Compose(
     [
@@ -202,14 +130,18 @@ def TransformImages(images,dimentions,device):
         ret.append(torchImage)
     return ret
 
+#Saves images in pairs to bmp files
+#imageList: list of imaes to save each pair of images (0 and 1) (2 and 3) are merged into one image
+#imageNames: the names to give the images
+#location: the folder to save images in
 def SaveImages(imageList,imageNames,location):
     i = 0
     while i < len(imageList):
         sublist = [imageList[i],imageList[i+1]]
-        #save_image(make_grid(sublist,nrow=2),('outputs/img'+ids[int(i/4)]+'.png'))#.save('outputs/img.png')
         F.to_pil_image(make_grid(sublist,nrow=2)).save(location+imageNames[int(i/2)]+'.bmp')
         i = i+2
 
+#loads images form a folder and returns a list of images and a list of image names
 def load_images_from_folder(folder):
     images = []
     imageNames = []
@@ -220,10 +152,12 @@ def load_images_from_folder(folder):
             imageNames.append(filename)
     return images,imageNames
 
+#Reads in a runConfig.json from the root directory.
+#If it isn't found asks the user for a path to the config json
 def readConfig():
     file = None
     try:
-        file = open('runConfig.json')
+        file = open('configs/runConfig.json')
     except Exception:
         flag = True
         while(flag):
@@ -253,17 +187,18 @@ imageDimentions = config['imageDimentions']
 
 #get the model
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
-model = get_model_instance_segmentation(num_classes,config['modelPath'])
+model = get_model_instance_segmentation(config['modelPath'])
 model.to(device)
 
+#load and transform images
 imageList,imageNames = load_images_from_folder(config['inputFolderPath'])
 transformedImages = TransformImages(imageList,imageDimentions,device)
 
-
-
+#run the model on the transformed images
 with torch.no_grad():
     predictions = model(transformedImages)
 
+#filter the predicted images
 #minScore bb
 #iou threash
 #mask threash
@@ -274,29 +209,6 @@ filteredImages = filterOutput(predictions,transformedImages,
     config['filtering']['maskConfidenceThreashold'],
     config['filtering']['maximumMaskOverlap'], imageDimentions,rainbow=config['Rainbow'])
 
+#save the filtered images
 SaveImages(filteredImages,imageNames,config['outputFolderPath'])
-
-# #number of classes includes the background
-# num_classes = 4
-
-# imageDimentions = 1024
-
-# #get the model
-# model = get_model_instance_segmentation(num_classes,'model_checkpoints/1024_LeafletClasifiedV4_30.tar')
-
-# imageList,imageNames = load_images_from_folder('data/raw/run')
-# transformedImages = TransformImages(imageList,imageDimentions)
-
-
-# with torch.no_grad():
-#     predictions = model(transformedImages)
-
-# #minScore bb
-# #iou threash
-# #mask threash
-# #mask overlap
-# filteredImages = filtered = filterOutput(predictions,transformedImages, .5, .5, .3, 1, imageDimentions,rainbow=False)
-
-# SaveImages(filteredImages,imageNames,'outputs/processed/')
-
 

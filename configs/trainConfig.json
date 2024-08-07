@@ -1,0 +1,34 @@
+{
+    "paths" : 
+    {
+        "rgbJson" : "data/processed/rgbPairs.json",
+        "boundingBoxCsv" : "data/processed/boundingBoxesBackup.csv",
+        "originalImages" : "data/raw/origionalImages/",
+        "segmentedImages" : "data/raw/segmentedImages/"
+    },
+    "dataLoader" :
+    {
+        "training" :
+        {
+            "batchSize" : 1,
+            "shuffle" : true
+        },
+        "validation" :
+        {
+            "batchSize" : 1,
+            "shuffle" : false
+        }        
+    },
+    "training" :
+    {
+        "learningRate": 0.004,
+        "momentum": 0.9,
+        "weightDecay": 0.0005,
+        "stepSize": 4,
+        "gamma" : 0.5,
+        "numberOfEpochs" : 40,
+        "saveInterval" : 5
+    },
+    "modelName" : "1024_configTestV1"
+
+}
