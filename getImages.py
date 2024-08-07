@@ -12,7 +12,7 @@ def json_stream_handler(output: lb.JsonConverterOutput, jsonFile, imagePath = 'd
   #convert the json to a dictionary
   line = json.loads(output.json_str)
   #check for an error where composite_mask does not appear in the json
-  if 'composite_mask' in line['projects']['clixbl663083u07zxhfgxgfio']['labels'][0]['annotations']['objects'][2]:
+  if len(line['projects']['clixbl663083u07zxhfgxgfio']['labels']) > 0 and 'composite_mask' in line['projects']['clixbl663083u07zxhfgxgfio']['labels'][0]['annotations']['objects'][2]:
     #find the mask url in the json
     url = line['projects']['clixbl663083u07zxhfgxgfio']['labels'][0]['annotations']['objects'][2]['composite_mask']['url']
     #optional print the url

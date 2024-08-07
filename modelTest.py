@@ -20,28 +20,28 @@ def get_model_instance_segmentation(num_classes):
     #model = torchvision.models.detection.maskrcnn_resnet50_fpn(weights="DEFAULT")
     model = torchvision.models.detection.maskrcnn_resnet50_fpn_v2(weights='COCO_V1')
 
-    print(model.rpn.anchor_generator)
+    
 
     #set the anchor box sizes
-    anchor_generator = AnchorGenerator(
-        sizes=(
-            (32,), 
-            (64,), 
-            (128,), 
-            (256,), 
-            (512,),
-        ),
-        aspect_ratios=(
-            (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
-            (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
-            (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
-            (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
-            (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
-        )
-    )
-    rpn_head = RPNHead(model.backbone.out_channels, anchor_generator.num_anchors_per_location()[0],conv_depth=2)
-    model.rpn.head = rpn_head
-    model.rpn.anchor_generator = anchor_generator
+    # anchor_generator = AnchorGenerator(
+    #     sizes=(
+    #         (32,), 
+    #         (64,), 
+    #         (128,), 
+    #         (256,), 
+    #         (512,),
+    #     ),
+    #     aspect_ratios=(
+    #         (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
+    #         (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
+    #         (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
+    #         (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
+    #         (0.25, 0.5, 1.0, 2.0, 3.0, 4.0),
+    #     )
+    # )
+    # rpn_head = RPNHead(model.backbone.out_channels, anchor_generator.num_anchors_per_location()[0],conv_depth=2)
+    # model.rpn.head = rpn_head
+    # model.rpn.anchor_generator = anchor_generator
 
 
     # get number of input features for the classifier
@@ -83,12 +83,12 @@ device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cp
 # file.close()
 
 # number of classes in the dataset
-num_classes = 5
+num_classes = 3
 
 # define training and validation data loaders
 data_loader = torch.utils.data.DataLoader(
     tds,
-    batch_size=12,
+    batch_size=10,
     shuffle=True,
     collate_fn=utils.collate_fn
 )
@@ -127,7 +127,7 @@ lr_scheduler = torch.optim.lr_scheduler.StepLR(
 #the number of epochs to run
 num_epochs = 80
 
-modelName = 'AllClasses'
+modelName = 'MergedBadV1'
 
 for epoch in range(num_epochs):
     # train for one epoch, printing every 10 iterations

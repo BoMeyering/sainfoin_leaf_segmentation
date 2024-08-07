@@ -65244,5 +65244,8059 @@
             ],
             "class": "petiole"
         }
+    },
+    "cllay52w71sjw07a0gidv0nnp": {
+        "1": {
+            "rgb": [
+                85,
+                66,
+                26
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_SGF1791_002.jpg",
+        "2": {
+            "rgb": [
+                213,
+                13,
+                114
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                20,
+                209,
+                171
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                107,
+                207,
+                12
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                88,
+                175,
+                124
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                49,
+                84,
+                0
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                41,
+                96,
+                103
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                152,
+                127,
+                42
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                45,
+                216,
+                95
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                1,
+                149,
+                196
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                253,
+                73,
+                155
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                58,
+                142,
+                2
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                0,
+                142,
+                250
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                238,
+                3,
+                228
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                28,
+                82,
+                100
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                97,
+                255,
+                144
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                108,
+                238,
+                118
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                53,
+                99,
+                201
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                36,
+                52,
+                8
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                200,
+                92,
+                8
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                123,
+                86,
+                208
+            ],
+            "class": "leaflet"
+        },
+        "23": {
+            "rgb": [
+                155,
+                215,
+                147
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71sk007a0h825080e": {
+        "externalID": "TLI_SGF1792_001.jpg",
+        "2": {
+            "rgb": [
+                54,
+                172,
+                213
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                67,
+                117,
+                131
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                124,
+                162,
+                15
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                132,
+                72,
+                155
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                226,
+                176,
+                2
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                146,
+                60,
+                61
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                255,
+                127,
+                178
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                78,
+                149,
+                71
+            ],
+            "class": "pinched_leaflet"
+        },
+        "10": {
+            "rgb": [
+                5,
+                89,
+                222
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                249,
+                195,
+                20
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                109,
+                5,
+                14
+            ],
+            "class": "pinched_leaflet"
+        },
+        "13": {
+            "rgb": [
+                162,
+                140,
+                110
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                188,
+                213,
+                249
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                22,
+                10,
+                200
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                75,
+                4,
+                108
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                65,
+                60,
+                11
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                99,
+                228,
+                200
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                162,
+                16,
+                35
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                169,
+                133,
+                142
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                253,
+                198,
+                76
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71sk407a01oaw4if2": {
+        "externalID": "TLI_SGF1795_001.jpg",
+        "2": {
+            "rgb": [
+                171,
+                159,
+                128
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                239,
+                213,
+                7
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                132,
+                89,
+                115
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                192,
+                119,
+                97
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                178,
+                136,
+                129
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                122,
+                251,
+                0
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                195,
+                21,
+                115
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                252,
+                23,
+                177
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                95,
+                11,
+                57
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                4,
+                166,
+                57
+            ],
+            "class": "pinched_leaflet"
+        },
+        "12": {
+            "rgb": [
+                104,
+                173,
+                81
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                88,
+                187,
+                157
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                252,
+                192,
+                25
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                110,
+                145,
+                73
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                187,
+                20,
+                206
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                190,
+                110,
+                202
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                203,
+                36,
+                185
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                241,
+                131,
+                55
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                170,
+                114,
+                33
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71sk807a03yb414ev": {
+        "externalID": "TLI_SGF1796_001.jpg",
+        "2": {
+            "rgb": [
+                105,
+                158,
+                110
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                207,
+                72,
+                226
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                5,
+                75,
+                229
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                192,
+                180,
+                227
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                13,
+                41,
+                82
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                246,
+                19,
+                30
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                85,
+                172,
+                243
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                115,
+                31,
+                50
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                84,
+                63,
+                123
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                26,
+                87,
+                73
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                120,
+                45,
+                119
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                207,
+                221,
+                107
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                13,
+                79,
+                136
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                9,
+                66,
+                209
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                48,
+                72,
+                57
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                192,
+                204,
+                200
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                232,
+                162,
+                241
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                249,
+                83,
+                206
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71skc07a04nwafyrq": {
+        "externalID": "TLI_SGF1796_002.jpg",
+        "2": {
+            "rgb": [
+                144,
+                117,
+                206
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                90,
+                223,
+                124
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                7,
+                112,
+                83
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                18,
+                172,
+                84
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                181,
+                199,
+                118
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                213,
+                69,
+                181
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                88,
+                39,
+                47
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                122,
+                65,
+                148
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                50,
+                244,
+                73
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                28,
+                252,
+                82
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                126,
+                60,
+                203
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                62,
+                98,
+                26
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                195,
+                189,
+                124
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                18,
+                4,
+                255
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                207,
+                67,
+                21
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                185,
+                115,
+                242
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                207,
+                32,
+                210
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                213,
+                29,
+                216
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71skg07a0f24pe1m0": {
+        "externalID": "TLI_SGF1796_003.jpg",
+        "2": {
+            "rgb": [
+                208,
+                176,
+                37
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                199,
+                5,
+                171
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                245,
+                211,
+                184
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                79,
+                58,
+                60
+            ],
+            "class": "pinched_leaflet"
+        },
+        "6": {
+            "rgb": [
+                132,
+                209,
+                63
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                37,
+                232,
+                49
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                81,
+                44,
+                86
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                165,
+                64,
+                83
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                153,
+                76,
+                77
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                40,
+                84,
+                114
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                177,
+                144,
+                121
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                191,
+                133,
+                208
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                195,
+                136,
+                162
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                225,
+                82,
+                5
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                12,
+                46,
+                141
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                142,
+                252,
+                215
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                58,
+                13,
+                147
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                219,
+                186,
+                71
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71skk07a07c4d9rk5": {
+        "externalID": "TLI_SGF1801_001.jpg",
+        "2": {
+            "rgb": [
+                140,
+                237,
+                84
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                62,
+                154,
+                40
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                42,
+                35,
+                4
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                23,
+                9,
+                208
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                22,
+                251,
+                20
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                189,
+                16,
+                39
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                92,
+                65,
+                68
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                87,
+                37,
+                10
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                13,
+                192,
+                41
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                237,
+                153,
+                236
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                132,
+                89,
+                214
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                44,
+                78,
+                211
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                16,
+                61,
+                114
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                13,
+                39,
+                246
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                126,
+                108,
+                63
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                216,
+                135,
+                87
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                26,
+                228,
+                164
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                15,
+                34,
+                120
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71sko07a0g6ewa53r": {
+        "externalID": "TLI_SGF1801_002.jpg",
+        "2": {
+            "rgb": [
+                23,
+                142,
+                224
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                205,
+                20,
+                215
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                250,
+                222,
+                31
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                28,
+                111,
+                33
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                45,
+                191,
+                50
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                16,
+                116,
+                150
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                11,
+                85,
+                208
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                69,
+                98,
+                225
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                108,
+                159,
+                207
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                186,
+                5,
+                75
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                205,
+                132,
+                165
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                146,
+                224,
+                86
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71sks07a05qjt1jqu": {
+        "externalID": "TLI_SGF1804_001.jpg",
+        "2": {
+            "rgb": [
+                163,
+                35,
+                227
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                169,
+                212,
+                97
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                118,
+                30,
+                177
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                15,
+                19,
+                69
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                3,
+                51,
+                220
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                166,
+                191,
+                60
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                39,
+                97,
+                225
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                8,
+                76,
+                227
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                79,
+                123,
+                208
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                10,
+                70,
+                223
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                207,
+                72,
+                147
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                5,
+                144,
+                59
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                180,
+                174,
+                105
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                51,
+                71,
+                182
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                62,
+                76,
+                123
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                201,
+                178,
+                193
+            ],
+            "class": "pinched_leaflet"
+        },
+        "18": {
+            "rgb": [
+                231,
+                225,
+                52
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                78,
+                250,
+                54
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                107,
+                226,
+                177
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                177,
+                123,
+                100
+            ],
+            "class": "leaflet"
+        },
+        "22": {
+            "rgb": [
+                63,
+                62,
+                228
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71skw07a06w5d52kv": {
+        "externalID": "TLI_SGF1804_002.jpg",
+        "2": {
+            "rgb": [
+                162,
+                73,
+                59
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                223,
+                197,
+                81
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                242,
+                35,
+                6
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                138,
+                102,
+                224
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                51,
+                182,
+                24
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                154,
+                129,
+                165
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                89,
+                134,
+                150
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                224,
+                101,
+                109
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                206,
+                230,
+                68
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                251,
+                188,
+                194
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                94,
+                114,
+                19
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                48,
+                206,
+                239
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                119,
+                235,
+                237
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                166,
+                19,
+                252
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                74,
+                253,
+                165
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                153,
+                206,
+                84
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                165,
+                126,
+                242
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                15,
+                102,
+                177
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                170,
+                231,
+                161
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                211,
+                18,
+                245
+            ],
+            "class": "leaflet"
+        },
+        "22": {
+            "rgb": [
+                45,
+                157,
+                253
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71sl007a00rj471y9": {
+        "externalID": "TLI_SGF1804_003.jpg",
+        "2": {
+            "rgb": [
+                187,
+                182,
+                33
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                196,
+                6,
+                134
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                238,
+                233,
+                153
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                4,
+                82,
+                72
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                214,
+                207,
+                177
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                68,
+                229,
+                158
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                247,
+                47,
+                160
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                248,
+                45,
+                190
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                22,
+                48,
+                75
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                216,
+                71,
+                233
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                88,
+                114,
+                148
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                40,
+                173,
+                234
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                116,
+                160,
+                97
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                224,
+                21,
+                162
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                240,
+                196,
+                233
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                130,
+                39,
+                167
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                79,
+                144,
+                224
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                13,
+                102,
+                34
+            ],
+            "class": "folded_leaflet"
+        },
+        "20": {
+            "rgb": [
+                200,
+                137,
+                58
+            ],
+            "class": "folded_leaflet"
+        },
+        "21": {
+            "rgb": [
+                192,
+                150,
+                29
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71sl407a06v4772tn": {
+        "externalID": "TLI_SGF1821_001.jpg",
+        "2": {
+            "rgb": [
+                229,
+                97,
+                27
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                229,
+                116,
+                166
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                95,
+                225,
+                174
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                76,
+                28,
+                150
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                217,
+                33,
+                249
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                195,
+                186,
+                158
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                213,
+                192,
+                52
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                246,
+                136,
+                171
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                215,
+                183,
+                97
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                22,
+                228,
+                123
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                228,
+                115,
+                59
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                123,
+                120,
+                217
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                158,
+                47,
+                176
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                6,
+                112,
+                187
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                50,
+                148,
+                227
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                185,
+                89,
+                236
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                149,
+                7,
+                211
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                103,
+                157,
+                45
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                171,
+                187,
+                19
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71sl807a0ebhudbw2": {
+        "externalID": "TLI_SGF1821_002.jpg",
+        "2": {
+            "rgb": [
+                9,
+                172,
+                222
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                153,
+                133,
+                102
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                70,
+                1,
+                246
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                6,
+                85,
+                194
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                166,
+                10,
+                39
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                198,
+                139,
+                140
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                192,
+                253,
+                34
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                226,
+                87,
+                57
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                170,
+                39,
+                187
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                56,
+                236,
+                34
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                43,
+                71,
+                192
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                148,
+                194,
+                198
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                56,
+                102,
+                132
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                213,
+                180,
+                142
+            ],
+            "class": "pinched_leaflet"
+        },
+        "16": {
+            "rgb": [
+                137,
+                0,
+                116
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                175,
+                93,
+                226
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                105,
+                1,
+                25
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                248,
+                116,
+                239
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                189,
+                167,
+                249
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                19,
+                48,
+                68
+            ],
+            "class": "leaflet"
+        },
+        "22": {
+            "rgb": [
+                82,
+                60,
+                45
+            ],
+            "class": "leaflet"
+        },
+        "23": {
+            "rgb": [
+                216,
+                215,
+                194
+            ],
+            "class": "leaflet"
+        },
+        "24": {
+            "rgb": [
+                238,
+                15,
+                137
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71slc07a0e5n83viq": {
+        "externalID": "TLI_SGF1821_003.jpg",
+        "2": {
+            "rgb": [
+                93,
+                115,
+                140
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                224,
+                83,
+                214
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                121,
+                240,
+                38
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                105,
+                133,
+                142
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                124,
+                64,
+                28
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                88,
+                129,
+                237
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                224,
+                5,
+                3
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                200,
+                207,
+                211
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                157,
+                42,
+                3
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                179,
+                218,
+                150
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                59,
+                33,
+                212
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                157,
+                58,
+                28
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                103,
+                252,
+                122
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                225,
+                148,
+                51
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                192,
+                196,
+                110
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                185,
+                3,
+                197
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                236,
+                160,
+                235
+            ],
+            "class": "folded_leaflet"
+        },
+        "19": {
+            "rgb": [
+                153,
+                126,
+                123
+            ],
+            "class": "folded_leaflet"
+        },
+        "20": {
+            "rgb": [
+                170,
+                113,
+                205
+            ],
+            "class": "pinched_leaflet"
+        },
+        "21": {
+            "rgb": [
+                85,
+                150,
+                39
+            ],
+            "class": "leaflet"
+        },
+        "22": {
+            "rgb": [
+                160,
+                52,
+                93
+            ],
+            "class": "leaflet"
+        },
+        "23": {
+            "rgb": [
+                204,
+                43,
+                249
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w71slg07a08sshaeih": {
+        "externalID": "TLI_SGF1850_001.jpg",
+        "2": {
+            "rgb": [
+                234,
+                197,
+                88
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                185,
+                212,
+                216
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                7,
+                93,
+                170
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                219,
+                181,
+                19
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                145,
+                51,
+                177
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                5,
+                181,
+                134
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                12,
+                125,
+                60
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                123,
+                44,
+                87
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                255,
+                197,
+                92
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                197,
+                228,
+                182
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                139,
+                105,
+                127
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                180,
+                244,
+                1
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                122,
+                187,
+                92
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                107,
+                106,
+                165
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                35,
+                130,
+                218
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                148,
+                179,
+                66
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                21,
+                27,
+                67
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                77,
+                150,
+                105
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w81slk07a08tq5gx79": {
+        "externalID": "TLI_SGF1882_001.jpg",
+        "2": {
+            "rgb": [
+                64,
+                159,
+                55
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                106,
+                111,
+                185
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                9,
+                54,
+                17
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                233,
+                223,
+                56
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                61,
+                127,
+                23
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                162,
+                81,
+                10
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                41,
+                73,
+                14
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                9,
+                17,
+                143
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                42,
+                53,
+                189
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                112,
+                92,
+                5
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                143,
+                105,
+                111
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                26,
+                216,
+                31
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                121,
+                238,
+                84
+            ],
+            "class": "pinched_leaflet"
+        },
+        "15": {
+            "rgb": [
+                3,
+                196,
+                205
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                133,
+                42,
+                95
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                162,
+                194,
+                24
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                167,
+                134,
+                169
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                246,
+                9,
+                224
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                24,
+                192,
+                226
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                248,
+                138,
+                101
+            ],
+            "class": "leaflet"
+        },
+        "22": {
+            "rgb": [
+                136,
+                94,
+                100
+            ],
+            "class": "leaflet"
+        },
+        "23": {
+            "rgb": [
+                88,
+                254,
+                75
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w81slo07a0hca62msr": {
+        "externalID": "TLI_SGF1882_002.jpg",
+        "2": {
+            "rgb": [
+                49,
+                116,
+                51
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                137,
+                5,
+                221
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                196,
+                207,
+                247
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                98,
+                41,
+                237
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                244,
+                175,
+                67
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                104,
+                39,
+                236
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                0,
+                197,
+                38
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                223,
+                79,
+                144
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                237,
+                1,
+                3
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                193,
+                232,
+                6
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                85,
+                172,
+                54
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                228,
+                81,
+                122
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                134,
+                31,
+                34
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                87,
+                254,
+                213
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                13,
+                56,
+                75
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                0,
+                36,
+                212
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                205,
+                221,
+                140
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                234,
+                245,
+                153
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                165,
+                79,
+                114
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                167,
+                181,
+                113
+            ],
+            "class": "pinched_leaflet"
+        },
+        "22": {
+            "rgb": [
+                197,
+                91,
+                203
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w81sls07a0d5v3dg4i": {
+        "externalID": "TLI_SGF1890_001.jpg",
+        "2": {
+            "rgb": [
+                182,
+                226,
+                95
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                197,
+                216,
+                221
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                181,
+                105,
+                168
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                70,
+                214,
+                45
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                175,
+                160,
+                76
+            ],
+            "class": "pinched_leaflet"
+        },
+        "7": {
+            "rgb": [
+                174,
+                29,
+                241
+            ],
+            "class": "pinched_leaflet"
+        },
+        "8": {
+            "rgb": [
+                126,
+                43,
+                244
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                100,
+                173,
+                51
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                190,
+                6,
+                81
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                143,
+                214,
+                89
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                171,
+                230,
+                161
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                180,
+                26,
+                0
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                0,
+                242,
+                21
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                79,
+                246,
+                153
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                182,
+                230,
+                122
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                232,
+                212,
+                32
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                250,
+                7,
+                213
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                98,
+                75,
+                172
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                38,
+                145,
+                35
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                87,
+                232,
+                12
+            ],
+            "class": "leaflet"
+        },
+        "22": {
+            "rgb": [
+                50,
+                99,
+                7
+            ],
+            "class": "leaflet"
+        },
+        "23": {
+            "rgb": [
+                186,
+                185,
+                113
+            ],
+            "class": "leaflet"
+        },
+        "24": {
+            "rgb": [
+                231,
+                171,
+                124
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w81slw07a02lri4jh1": {
+        "externalID": "TLI_SGF1890_002.jpg",
+        "2": {
+            "rgb": [
+                222,
+                3,
+                42
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                51,
+                133,
+                119
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                55,
+                84,
+                229
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                149,
+                217,
+                11
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                76,
+                24,
+                129
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                251,
+                7,
+                194
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                253,
+                95,
+                11
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                147,
+                143,
+                214
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                109,
+                133,
+                25
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                61,
+                21,
+                211
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                143,
+                126,
+                131
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                122,
+                243,
+                150
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                32,
+                237,
+                161
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                124,
+                90,
+                140
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                222,
+                71,
+                161
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                209,
+                32,
+                227
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                228,
+                153,
+                190
+            ],
+            "class": "folded_leaflet"
+        },
+        "19": {
+            "rgb": [
+                95,
+                72,
+                211
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                80,
+                121,
+                78
+            ],
+            "class": "folded_leaflet"
+        },
+        "21": {
+            "rgb": [
+                198,
+                145,
+                75
+            ],
+            "class": "folded_leaflet"
+        },
+        "22": {
+            "rgb": [
+                123,
+                40,
+                149
+            ],
+            "class": "leaflet"
+        },
+        "23": {
+            "rgb": [
+                209,
+                180,
+                56
+            ],
+            "class": "leaflet"
+        },
+        "24": {
+            "rgb": [
+                82,
+                100,
+                92
+            ],
+            "class": "leaflet"
+        },
+        "25": {
+            "rgb": [
+                147,
+                137,
+                201
+            ],
+            "class": "leaflet"
+        },
+        "26": {
+            "rgb": [
+                119,
+                6,
+                221
+            ],
+            "class": "leaflet"
+        },
+        "27": {
+            "rgb": [
+                142,
+                169,
+                172
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w81sm007a0fpdm8y7l": {
+        "externalID": "TLI_SGF1896_001.jpg",
+        "2": {
+            "rgb": [
+                26,
+                159,
+                144
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                94,
+                107,
+                52
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                195,
+                191,
+                140
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                126,
+                141,
+                34
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                250,
+                250,
+                230
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                222,
+                83,
+                234
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                85,
+                195,
+                110
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                114,
+                76,
+                5
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                250,
+                167,
+                229
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                37,
+                115,
+                24
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                153,
+                240,
+                231
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                44,
+                251,
+                223
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                22,
+                51,
+                112
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                219,
+                224,
+                145
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                0,
+                133,
+                118
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                215,
+                143,
+                225
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                181,
+                17,
+                241
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                231,
+                191,
+                77
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                155,
+                68,
+                212
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                222,
+                215,
+                65
+            ],
+            "class": "leaflet"
+        },
+        "22": {
+            "rgb": [
+                155,
+                254,
+                156
+            ],
+            "class": "leaflet"
+        },
+        "23": {
+            "rgb": [
+                78,
+                120,
+                72
+            ],
+            "class": "leaflet"
+        },
+        "24": {
+            "rgb": [
+                55,
+                84,
+                71
+            ],
+            "class": "leaflet"
+        },
+        "25": {
+            "rgb": [
+                216,
+                137,
+                212
+            ],
+            "class": "leaflet"
+        },
+        "26": {
+            "rgb": [
+                68,
+                105,
+                62
+            ],
+            "class": "leaflet"
+        },
+        "27": {
+            "rgb": [
+                32,
+                52,
+                173
+            ],
+            "class": "leaflet"
+        },
+        "28": {
+            "rgb": [
+                139,
+                175,
+                134
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w81sm407a0dcql3e7n": {
+        "externalID": "TLI_SGF1896_002.jpg",
+        "2": {
+            "rgb": [
+                67,
+                60,
+                46
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                191,
+                44,
+                47
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                92,
+                40,
+                129
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                246,
+                13,
+                72
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                108,
+                59,
+                30
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                18,
+                13,
+                136
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                98,
+                13,
+                227
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                161,
+                98,
+                48
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                193,
+                150,
+                195
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                89,
+                217,
+                29
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                70,
+                229,
+                12
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                54,
+                182,
+                144
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                243,
+                103,
+                25
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                12,
+                252,
+                138
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                190,
+                247,
+                150
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                176,
+                24,
+                25
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                74,
+                2,
+                131
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                9,
+                203,
+                176
+            ],
+            "class": "folded_leaflet"
+        },
+        "20": {
+            "rgb": [
+                125,
+                85,
+                76
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                35,
+                197,
+                236
+            ],
+            "class": "leaflet"
+        },
+        "22": {
+            "rgb": [
+                47,
+                142,
+                179
+            ],
+            "class": "leaflet"
+        },
+        "23": {
+            "rgb": [
+                220,
+                38,
+                10
+            ],
+            "class": "leaflet"
+        },
+        "24": {
+            "rgb": [
+                84,
+                205,
+                22
+            ],
+            "class": "leaflet"
+        },
+        "25": {
+            "rgb": [
+                180,
+                151,
+                200
+            ],
+            "class": "leaflet"
+        },
+        "26": {
+            "rgb": [
+                155,
+                175,
+                76
+            ],
+            "class": "leaflet"
+        },
+        "27": {
+            "rgb": [
+                219,
+                127,
+                128
+            ],
+            "class": "leaflet"
+        },
+        "28": {
+            "rgb": [
+                63,
+                171,
+                80
+            ],
+            "class": "leaflet"
+        },
+        "29": {
+            "rgb": [
+                54,
+                20,
+                224
+            ],
+            "class": "leaflet"
+        },
+        "30": {
+            "rgb": [
+                173,
+                154,
+                138
+            ],
+            "class": "leaflet"
+        },
+        "31": {
+            "rgb": [
+                96,
+                124,
+                92
+            ],
+            "class": "petiole"
+        }
+    },
+    "cllay52w81sm807a086n268g2": {
+        "externalID": "TLI_SGF1897_001.jpg",
+        "2": {
+            "rgb": [
+                32,
+                122,
+                185
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                149,
+                38,
+                251
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                206,
+                9,
+                158
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                20,
+                114,
+                159
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                215,
+                87,
+                245
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                110,
+                53,
+                74
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                225,
+                44,
+                4
+            ],
+            "class": "pinched_leaflet"
+        },
+        "9": {
+            "rgb": [
+                196,
+                76,
+                95
+            ],
+            "class": "pinched_leaflet"
+        },
+        "10": {
+            "rgb": [
+                96,
+                74,
+                98
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                170,
+                49,
+                206
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                34,
+                34,
+                41
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                9,
+                109,
+                84
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                147,
+                111,
+                120
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                121,
+                163,
+                156
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                113,
+                198,
+                2
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                233,
+                16,
+                94
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                136,
+                205,
+                44
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                31,
+                189,
+                26
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                192,
+                74,
+                104
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                104,
+                90,
+                190
+            ],
+            "class": "leaflet"
+        },
+        "22": {
+            "rgb": [
+                61,
+                128,
+                188
+            ],
+            "class": "leaflet"
+        },
+        "23": {
+            "rgb": [
+                130,
+                188,
+                233
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kb0713soimnw11": {
+        "1": {
+            "rgb": [
+                165,
+                21,
+                77
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_1185.jpg",
+        "2": {
+            "rgb": [
+                186,
+                155,
+                212
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                193,
+                39,
+                165
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                83,
+                190,
+                113
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                214,
+                159,
+                201
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                8,
+                119,
+                225
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                8,
+                98,
+                6
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                57,
+                120,
+                151
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                0,
+                173,
+                240
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                143,
+                211,
+                214
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                83,
+                195,
+                234
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                231,
+                21,
+                14
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                165,
+                216,
+                185
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                26,
+                228,
+                194
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                178,
+                179,
+                252
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                121,
+                109,
+                233
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                201,
+                9,
+                123
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                154,
+                82,
+                124
+            ],
+            "class": "folded_leaflet"
+        },
+        "19": {
+            "rgb": [
+                156,
+                218,
+                236
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                189,
+                110,
+                128
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                82,
+                119,
+                42
+            ],
+            "class": "leaflet"
+        },
+        "22": {
+            "rgb": [
+                73,
+                238,
+                105
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kc0713p5nh5s9w": {
+        "1": {
+            "rgb": [
+                104,
+                247,
+                170
+            ],
+            "class": "folded_leaflet"
+        },
+        "externalID": "TLI_E+K_1085.jpg",
+        "2": {
+            "rgb": [
+                45,
+                55,
+                67
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                242,
+                226,
+                201
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                6,
+                42,
+                18
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                190,
+                242,
+                198
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                19,
+                59,
+                204
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                99,
+                108,
+                202
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                96,
+                129,
+                52
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                52,
+                64,
+                242
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                126,
+                239,
+                116
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                212,
+                38,
+                66
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                8,
+                48,
+                200
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                150,
+                73,
+                4
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kd0713blvdm9iu": {
+        "1": {
+            "rgb": [
+                160,
+                157,
+                135
+            ],
+            "class": "folded_leaflet"
+        },
+        "externalID": "TLI_E+K_1084.jpg",
+        "2": {
+            "rgb": [
+                179,
+                181,
+                17
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                75,
+                76,
+                112
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                250,
+                236,
+                78
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                164,
+                247,
+                208
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                218,
+                75,
+                110
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                17,
+                30,
+                254
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                75,
+                155,
+                240
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                58,
+                119,
+                121
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                131,
+                237,
+                68
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                204,
+                23,
+                187
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                127,
+                147,
+                169
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                217,
+                121,
+                148
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5ke0713aexoed54": {
+        "1": {
+            "rgb": [
+                111,
+                233,
+                6
+            ],
+            "class": "pinched_leaflet"
+        },
+        "externalID": "TLI_E+K_962.jpg",
+        "2": {
+            "rgb": [
+                151,
+                25,
+                222
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                134,
+                42,
+                147
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                25,
+                211,
+                63
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                242,
+                4,
+                69
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                218,
+                129,
+                249
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                78,
+                55,
+                126
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                98,
+                132,
+                185
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                165,
+                190,
+                29
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                225,
+                222,
+                164
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                241,
+                228,
+                104
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                179,
+                239,
+                59
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                44,
+                169,
+                20
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                175,
+                111,
+                140
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                89,
+                243,
+                191
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                17,
+                94,
+                44
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                166,
+                27,
+                253
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                241,
+                86,
+                52
+            ],
+            "class": "folded_leaflet"
+        },
+        "19": {
+            "rgb": [
+                122,
+                16,
+                104
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kf0713x2m814cn": {
+        "1": {
+            "rgb": [
+                168,
+                221,
+                170
+            ],
+            "class": "pinched_leaflet"
+        },
+        "externalID": "TLI_E+K_961.jpg",
+        "2": {
+            "rgb": [
+                160,
+                3,
+                26
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                31,
+                117,
+                46
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                160,
+                210,
+                97
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                97,
+                31,
+                195
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                157,
+                159,
+                224
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                115,
+                170,
+                149
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                236,
+                217,
+                82
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                224,
+                168,
+                20
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                202,
+                109,
+                120
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                102,
+                12,
+                93
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                244,
+                170,
+                120
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                222,
+                115,
+                142
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                255,
+                79,
+                140
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                149,
+                69,
+                7
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                205,
+                68,
+                126
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                47,
+                115,
+                231
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                2,
+                241,
+                148
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                92,
+                236,
+                251
+            ],
+            "class": "folded_leaflet"
+        },
+        "20": {
+            "rgb": [
+                146,
+                108,
+                167
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kg0713jhc9c42d": {
+        "1": {
+            "rgb": [
+                197,
+                100,
+                163
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_960.jpg",
+        "2": {
+            "rgb": [
+                24,
+                202,
+                56
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                220,
+                254,
+                90
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                19,
+                177,
+                215
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                234,
+                92,
+                242
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                188,
+                31,
+                14
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                168,
+                144,
+                123
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                180,
+                67,
+                16
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                169,
+                134,
+                135
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                216,
+                222,
+                251
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                171,
+                129,
+                81
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                77,
+                97,
+                31
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                228,
+                202,
+                25
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                185,
+                248,
+                180
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                187,
+                65,
+                190
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                205,
+                55,
+                177
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                95,
+                58,
+                212
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                132,
+                192,
+                124
+            ],
+            "class": "folded_leaflet"
+        },
+        "19": {
+            "rgb": [
+                202,
+                133,
+                105
+            ],
+            "class": "folded_leaflet"
+        },
+        "20": {
+            "rgb": [
+                78,
+                94,
+                115
+            ],
+            "class": "folded_leaflet"
+        },
+        "21": {
+            "rgb": [
+                25,
+                187,
+                53
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kh0713gvvy7zua": {
+        "1": {
+            "rgb": [
+                67,
+                38,
+                50
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_923.jpg",
+        "2": {
+            "rgb": [
+                9,
+                169,
+                109
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                23,
+                128,
+                26
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                129,
+                252,
+                128
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                110,
+                21,
+                239
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                55,
+                151,
+                5
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                134,
+                137,
+                155
+            ],
+            "class": "pinched_leaflet"
+        },
+        "8": {
+            "rgb": [
+                85,
+                102,
+                56
+            ],
+            "class": "pinched_leaflet"
+        },
+        "9": {
+            "rgb": [
+                126,
+                83,
+                117
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                0,
+                112,
+                41
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                85,
+                159,
+                106
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                28,
+                88,
+                183
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                167,
+                177,
+                255
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                161,
+                24,
+                116
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                113,
+                191,
+                241
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                177,
+                158,
+                79
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                122,
+                72,
+                230
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                167,
+                226,
+                183
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                177,
+                92,
+                165
+            ],
+            "class": "folded_leaflet"
+        },
+        "20": {
+            "rgb": [
+                127,
+                52,
+                50
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                204,
+                15,
+                60
+            ],
+            "class": "pinched_leaflet"
+        },
+        "22": {
+            "rgb": [
+                41,
+                82,
+                108
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5ki07134js4k6r1": {
+        "1": {
+            "rgb": [
+                145,
+                244,
+                9
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_922.jpg",
+        "2": {
+            "rgb": [
+                40,
+                251,
+                172
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                211,
+                23,
+                160
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                246,
+                92,
+                0
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                80,
+                32,
+                83
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                193,
+                15,
+                8
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                7,
+                45,
+                223
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                172,
+                236,
+                166
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                91,
+                71,
+                220
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                16,
+                19,
+                239
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                101,
+                72,
+                241
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                153,
+                14,
+                93
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                237,
+                175,
+                67
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                105,
+                40,
+                240
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                119,
+                85,
+                197
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                241,
+                63,
+                222
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                0,
+                5,
+                178
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                169,
+                246,
+                223
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                174,
+                249,
+                54
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kj0713axb420po": {
+        "1": {
+            "rgb": [
+                161,
+                248,
+                29
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_921.jpg",
+        "2": {
+            "rgb": [
+                173,
+                67,
+                117
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                44,
+                81,
+                130
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                241,
+                169,
+                184
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                244,
+                233,
+                81
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                140,
+                65,
+                130
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                169,
+                49,
+                145
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                211,
+                241,
+                245
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                29,
+                251,
+                196
+            ],
+            "class": "pinched_leaflet"
+        },
+        "10": {
+            "rgb": [
+                63,
+                234,
+                18
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                216,
+                86,
+                38
+            ],
+            "class": "pinched_leaflet"
+        },
+        "12": {
+            "rgb": [
+                121,
+                18,
+                171
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                29,
+                244,
+                173
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                37,
+                143,
+                80
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                169,
+                88,
+                197
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                236,
+                133,
+                95
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                190,
+                121,
+                198
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kk0713kd80shxi": {
+        "1": {
+            "rgb": [
+                107,
+                200,
+                155
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_900.jpg",
+        "2": {
+            "rgb": [
+                99,
+                73,
+                106
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                134,
+                35,
+                186
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                244,
+                108,
+                156
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                21,
+                81,
+                163
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                24,
+                39,
+                100
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                49,
+                120,
+                9
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                186,
+                78,
+                199
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                54,
+                250,
+                199
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                247,
+                111,
+                178
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                114,
+                87,
+                8
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                35,
+                216,
+                107
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kl0713mdwwdl9i": {
+        "1": {
+            "rgb": [
+                164,
+                204,
+                139
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_793.jpg",
+        "2": {
+            "rgb": [
+                53,
+                2,
+                10
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                43,
+                61,
+                116
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                179,
+                236,
+                248
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                87,
+                90,
+                65
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                104,
+                174,
+                170
+            ],
+            "class": "pinched_leaflet"
+        },
+        "7": {
+            "rgb": [
+                131,
+                123,
+                58
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                128,
+                130,
+                166
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                208,
+                157,
+                135
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                135,
+                28,
+                116
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                137,
+                92,
+                45
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                86,
+                163,
+                216
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                59,
+                119,
+                177
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                46,
+                184,
+                149
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                218,
+                60,
+                252
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                199,
+                149,
+                219
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                128,
+                81,
+                4
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                62,
+                107,
+                117
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                46,
+                26,
+                44
+            ],
+            "class": "folded_leaflet"
+        },
+        "20": {
+            "rgb": [
+                217,
+                111,
+                105
+            ],
+            "class": "leaflet"
+        },
+        "21": {
+            "rgb": [
+                58,
+                92,
+                133
+            ],
+            "class": "folded_leaflet"
+        },
+        "22": {
+            "rgb": [
+                231,
+                54,
+                89
+            ],
+            "class": "folded_leaflet"
+        },
+        "23": {
+            "rgb": [
+                112,
+                144,
+                145
+            ],
+            "class": "folded_leaflet"
+        },
+        "24": {
+            "rgb": [
+                182,
+                173,
+                195
+            ],
+            "class": "leaflet"
+        },
+        "25": {
+            "rgb": [
+                186,
+                38,
+                170
+            ],
+            "class": "folded_leaflet"
+        },
+        "26": {
+            "rgb": [
+                136,
+                163,
+                29
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5km0713kjnigsjl": {
+        "1": {
+            "rgb": [
+                88,
+                0,
+                114
+            ],
+            "class": "folded_leaflet"
+        },
+        "externalID": "TLI_E+K_773.jpg",
+        "2": {
+            "rgb": [
+                179,
+                58,
+                103
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                41,
+                141,
+                175
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                32,
+                106,
+                139
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                221,
+                223,
+                236
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                134,
+                244,
+                67
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                199,
+                89,
+                225
+            ],
+            "class": "pinched_leaflet"
+        },
+        "8": {
+            "rgb": [
+                81,
+                252,
+                73
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                19,
+                206,
+                70
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                173,
+                27,
+                45
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                69,
+                57,
+                240
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                208,
+                15,
+                249
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                105,
+                172,
+                57
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                79,
+                240,
+                190
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                20,
+                151,
+                252
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                252,
+                217,
+                66
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                73,
+                90,
+                114
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                224,
+                40,
+                118
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kn0713sgq3iw32": {
+        "1": {
+            "rgb": [
+                157,
+                103,
+                201
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_660.jpg",
+        "2": {
+            "rgb": [
+                190,
+                2,
+                220
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                254,
+                141,
+                85
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                150,
+                204,
+                72
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                184,
+                157,
+                90
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                15,
+                229,
+                10
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                46,
+                3,
+                113
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                249,
+                216,
+                207
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                217,
+                214,
+                39
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                140,
+                61,
+                76
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                177,
+                23,
+                189
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                222,
+                65,
+                64
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                197,
+                210,
+                165
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                94,
+                56,
+                176
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                204,
+                78,
+                213
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                106,
+                39,
+                53
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5ko07137ouedodx": {
+        "1": {
+            "rgb": [
+                89,
+                227,
+                185
+            ],
+            "class": "folded_leaflet"
+        },
+        "externalID": "TLI_E+K_659.jpg",
+        "2": {
+            "rgb": [
+                76,
+                40,
+                13
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                240,
+                5,
+                120
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                8,
+                192,
+                235
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                137,
+                113,
+                231
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                161,
+                174,
+                71
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                117,
+                139,
+                44
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                188,
+                140,
+                135
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                130,
+                45,
+                30
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                167,
+                29,
+                84
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                42,
+                65,
+                142
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                128,
+                163,
+                86
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                48,
+                249,
+                180
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                220,
+                52,
+                146
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                121,
+                243,
+                253
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                250,
+                46,
+                48
+            ],
+            "class": "pinched_leaflet"
+        },
+        "17": {
+            "rgb": [
+                54,
+                36,
+                194
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kp0713in1xd7xn": {
+        "1": {
+            "rgb": [
+                178,
+                144,
+                159
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_658.jpg",
+        "2": {
+            "rgb": [
+                191,
+                64,
+                114
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                224,
+                0,
+                37
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                162,
+                11,
+                206
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                82,
+                193,
+                101
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                103,
+                150,
+                81
+            ],
+            "class": "pinched_leaflet"
+        },
+        "7": {
+            "rgb": [
+                39,
+                99,
+                233
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                233,
+                136,
+                255
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                29,
+                235,
+                38
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                183,
+                119,
+                32
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                220,
+                255,
+                235
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                152,
+                58,
+                87
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                0,
+                64,
+                70
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                62,
+                106,
+                90
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                80,
+                232,
+                207
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                46,
+                201,
+                230
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                194,
+                153,
+                137
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                112,
+                249,
+                225
+            ],
+            "class": "folded_leaflet"
+        },
+        "19": {
+            "rgb": [
+                24,
+                11,
+                212
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kq0713k6n15mw2": {
+        "1": {
+            "rgb": [
+                178,
+                151,
+                60
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_551.jpg",
+        "2": {
+            "rgb": [
+                169,
+                234,
+                2
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                79,
+                94,
+                25
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                215,
+                153,
+                29
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                156,
+                111,
+                81
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                175,
+                132,
+                21
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                30,
+                91,
+                82
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                217,
+                2,
+                58
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                189,
+                25,
+                83
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                110,
+                218,
+                113
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                99,
+                245,
+                91
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                242,
+                248,
+                38
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                162,
+                88,
+                105
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                138,
+                105,
+                141
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                93,
+                11,
+                181
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                197,
+                175,
+                56
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                177,
+                101,
+                199
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                138,
+                239,
+                113
+            ],
+            "class": "folded_leaflet"
+        },
+        "19": {
+            "rgb": [
+                196,
+                255,
+                184
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                127,
+                152,
+                185
+            ],
+            "class": "folded_leaflet"
+        },
+        "21": {
+            "rgb": [
+                134,
+                153,
+                77
+            ],
+            "class": "folded_leaflet"
+        },
+        "22": {
+            "rgb": [
+                59,
+                53,
+                7
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kr071343388ljq": {
+        "1": {
+            "rgb": [
+                56,
+                184,
+                211
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_425.jpg",
+        "2": {
+            "rgb": [
+                99,
+                76,
+                237
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                68,
+                195,
+                55
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                194,
+                39,
+                234
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                92,
+                176,
+                177
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                4,
+                245,
+                189
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                151,
+                162,
+                11
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                158,
+                112,
+                27
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                166,
+                230,
+                57
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                226,
+                135,
+                172
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                127,
+                59,
+                41
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                71,
+                101,
+                134
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                37,
+                136,
+                28
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                63,
+                139,
+                86
+            ],
+            "class": "leaflet"
+        },
+        "15": {
+            "rgb": [
+                165,
+                179,
+                40
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                61,
+                103,
+                69
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                28,
+                182,
+                195
+            ],
+            "class": "leaflet"
+        },
+        "18": {
+            "rgb": [
+                185,
+                6,
+                64
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5ks0713mdaiwp28": {
+        "1": {
+            "rgb": [
+                20,
+                2,
+                177
+            ],
+            "class": "folded_leaflet"
+        },
+        "externalID": "TLI_E+K_405.jpg",
+        "2": {
+            "rgb": [
+                63,
+                220,
+                244
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                150,
+                204,
+                165
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                45,
+                107,
+                203
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                80,
+                214,
+                67
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                238,
+                237,
+                46
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                85,
+                227,
+                65
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                130,
+                151,
+                50
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                143,
+                234,
+                147
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                116,
+                173,
+                42
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                40,
+                192,
+                30
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                179,
+                32,
+                53
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                92,
+                202,
+                193
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                44,
+                239,
+                165
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                81,
+                56,
+                83
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                192,
+                227,
+                85
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                31,
+                197,
+                51
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                218,
+                146,
+                38
+            ],
+            "class": "folded_leaflet"
+        },
+        "19": {
+            "rgb": [
+                11,
+                49,
+                196
+            ],
+            "class": "folded_leaflet"
+        },
+        "20": {
+            "rgb": [
+                84,
+                172,
+                204
+            ],
+            "class": "folded_leaflet"
+        },
+        "21": {
+            "rgb": [
+                54,
+                196,
+                106
+            ],
+            "class": "folded_leaflet"
+        },
+        "22": {
+            "rgb": [
+                197,
+                23,
+                137
+            ],
+            "class": "folded_leaflet"
+        },
+        "23": {
+            "rgb": [
+                216,
+                227,
+                200
+            ],
+            "class": "folded_leaflet"
+        },
+        "24": {
+            "rgb": [
+                94,
+                161,
+                194
+            ],
+            "class": "folded_leaflet"
+        },
+        "25": {
+            "rgb": [
+                63,
+                163,
+                188
+            ],
+            "class": "folded_leaflet"
+        },
+        "26": {
+            "rgb": [
+                208,
+                136,
+                168
+            ],
+            "class": "folded_leaflet"
+        },
+        "27": {
+            "rgb": [
+                16,
+                213,
+                50
+            ],
+            "class": "folded_leaflet"
+        },
+        "28": {
+            "rgb": [
+                255,
+                80,
+                233
+            ],
+            "class": "petiole"
+        },
+        "29": {
+            "rgb": [
+                244,
+                183,
+                246
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kt0713j6cwlqsg": {
+        "1": {
+            "rgb": [
+                27,
+                182,
+                20
+            ],
+            "class": "folded_leaflet"
+        },
+        "externalID": "TLI_E+K_390.jpg",
+        "2": {
+            "rgb": [
+                13,
+                201,
+                46
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                15,
+                245,
+                12
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                160,
+                123,
+                190
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                176,
+                80,
+                233
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                84,
+                210,
+                136
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                169,
+                157,
+                172
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                164,
+                170,
+                19
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                160,
+                104,
+                50
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                182,
+                40,
+                218
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                125,
+                174,
+                242
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                24,
+                216,
+                162
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                82,
+                88,
+                155
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                83,
+                107,
+                176
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                27,
+                207,
+                242
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                236,
+                106,
+                240
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                130,
+                79,
+                135
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                216,
+                91,
+                174
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5ku0713gvm212hh": {
+        "1": {
+            "rgb": [
+                83,
+                30,
+                110
+            ],
+            "class": "folded_leaflet"
+        },
+        "externalID": "TLI_E+K_389.jpg",
+        "2": {
+            "rgb": [
+                60,
+                35,
+                135
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                207,
+                177,
+                253
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                123,
+                63,
+                113
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                90,
+                243,
+                41
+            ],
+            "class": "pinched_leaflet"
+        },
+        "6": {
+            "rgb": [
+                127,
+                120,
+                24
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                211,
+                193,
+                5
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                220,
+                81,
+                202
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                56,
+                68,
+                127
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                208,
+                125,
+                149
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                201,
+                179,
+                31
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                121,
+                113,
+                220
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                134,
+                216,
+                102
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                217,
+                30,
+                209
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                112,
+                81,
+                174
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                64,
+                194,
+                188
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                141,
+                91,
+                31
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                172,
+                86,
+                177
+            ],
+            "class": "folded_leaflet"
+        },
+        "19": {
+            "rgb": [
+                240,
+                177,
+                40
+            ],
+            "class": "folded_leaflet"
+        },
+        "20": {
+            "rgb": [
+                99,
+                137,
+                77
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kv0713np4xa9q2": {
+        "1": {
+            "rgb": [
+                38,
+                173,
+                151
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_388.jpg",
+        "2": {
+            "rgb": [
+                219,
+                211,
+                55
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                20,
+                159,
+                147
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                32,
+                34,
+                23
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                253,
+                157,
+                97
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                3,
+                162,
+                20
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                231,
+                185,
+                241
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                181,
+                115,
+                103
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                192,
+                125,
+                187
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                104,
+                253,
+                176
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                89,
+                191,
+                47
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                171,
+                64,
+                28
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                124,
+                241,
+                143
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                13,
+                85,
+                65
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kw071362i3pwqd": {
+        "1": {
+            "rgb": [
+                14,
+                49,
+                200
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_272.jpg",
+        "2": {
+            "rgb": [
+                152,
+                44,
+                114
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                216,
+                135,
+                164
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                70,
+                127,
+                70
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                141,
+                177,
+                132
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                23,
+                43,
+                249
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                183,
+                77,
+                254
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                108,
+                15,
+                46
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                185,
+                29,
+                186
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                144,
+                93,
+                240
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                134,
+                29,
+                220
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                5,
+                3,
+                102
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                15,
+                239,
+                241
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                213,
+                95,
+                225
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                10,
+                130,
+                130
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                209,
+                187,
+                194
+            ],
+            "class": "leaflet"
+        },
+        "17": {
+            "rgb": [
+                212,
+                7,
+                39
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                179,
+                93,
+                85
+            ],
+            "class": "folded_leaflet"
+        },
+        "19": {
+            "rgb": [
+                153,
+                17,
+                206
+            ],
+            "class": "folded_leaflet"
+        },
+        "20": {
+            "rgb": [
+                20,
+                142,
+                65
+            ],
+            "class": "folded_leaflet"
+        },
+        "21": {
+            "rgb": [
+                64,
+                17,
+                13
+            ],
+            "class": "folded_leaflet"
+        },
+        "22": {
+            "rgb": [
+                166,
+                153,
+                198
+            ],
+            "class": "folded_leaflet"
+        },
+        "23": {
+            "rgb": [
+                91,
+                174,
+                40
+            ],
+            "class": "folded_leaflet"
+        },
+        "24": {
+            "rgb": [
+                168,
+                230,
+                204
+            ],
+            "class": "folded_leaflet"
+        },
+        "25": {
+            "rgb": [
+                245,
+                80,
+                228
+            ],
+            "class": "leaflet"
+        },
+        "26": {
+            "rgb": [
+                193,
+                160,
+                163
+            ],
+            "class": "folded_leaflet"
+        },
+        "27": {
+            "rgb": [
+                189,
+                10,
+                146
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kx0713c1ymltre": {
+        "1": {
+            "rgb": [
+                241,
+                234,
+                56
+            ],
+            "class": "folded_leaflet"
+        },
+        "externalID": "TLI_E+K_263.jpg",
+        "2": {
+            "rgb": [
+                165,
+                153,
+                111
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                130,
+                1,
+                29
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                37,
+                13,
+                204
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                121,
+                183,
+                191
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                122,
+                88,
+                54
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                200,
+                228,
+                144
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                76,
+                204,
+                64
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                102,
+                137,
+                164
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                161,
+                195,
+                238
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                229,
+                86,
+                194
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                25,
+                212,
+                34
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                16,
+                1,
+                227
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                170,
+                155,
+                55
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                125,
+                179,
+                62
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                183,
+                150,
+                33
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                11,
+                115,
+                14
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                154,
+                147,
+                173
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5ky0713prn2hacm": {
+        "1": {
+            "rgb": [
+                162,
+                203,
+                58
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_250.jpg",
+        "2": {
+            "rgb": [
+                174,
+                20,
+                229
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                221,
+                229,
+                52
+            ],
+            "class": "leaflet"
+        },
+        "4": {
+            "rgb": [
+                152,
+                233,
+                78
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                213,
+                56,
+                222
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                206,
+                90,
+                181
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                28,
+                61,
+                13
+            ],
+            "class": "leaflet"
+        },
+        "8": {
+            "rgb": [
+                100,
+                204,
+                176
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                202,
+                108,
+                155
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                89,
+                158,
+                83
+            ],
+            "class": "leaflet"
+        },
+        "11": {
+            "rgb": [
+                158,
+                35,
+                78
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                152,
+                110,
+                21
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                104,
+                94,
+                57
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                102,
+                231,
+                212
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                132,
+                18,
+                178
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                181,
+                46,
+                155
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                127,
+                57,
+                191
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                44,
+                92,
+                123
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                165,
+                85,
+                248
+            ],
+            "class": "leaflet"
+        },
+        "20": {
+            "rgb": [
+                85,
+                20,
+                240
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5kz0713zmu8ux9l": {
+        "1": {
+            "rgb": [
+                233,
+                231,
+                66
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_223.jpg",
+        "2": {
+            "rgb": [
+                24,
+                207,
+                193
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                43,
+                226,
+                240
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                56,
+                199,
+                219
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                136,
+                60,
+                31
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                157,
+                163,
+                97
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                124,
+                37,
+                155
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                233,
+                159,
+                11
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                155,
+                47,
+                43
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                102,
+                7,
+                169
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                20,
+                250,
+                95
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                117,
+                132,
+                162
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                49,
+                239,
+                46
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                253,
+                179,
+                232
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                193,
+                148,
+                164
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                115,
+                31,
+                94
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5l00713ixxijj1t": {
+        "1": {
+            "rgb": [
+                0,
+                56,
+                88
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_207.jpg",
+        "2": {
+            "rgb": [
+                85,
+                92,
+                7
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                20,
+                25,
+                160
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                193,
+                123,
+                151
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                200,
+                66,
+                111
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                234,
+                14,
+                66
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                79,
+                164,
+                121
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                54,
+                19,
+                112
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                84,
+                116,
+                60
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                4,
+                125,
+                114
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                147,
+                133,
+                101
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                54,
+                220,
+                66
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                156,
+                248,
+                107
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                211,
+                69,
+                150
+            ],
+            "class": "folded_leaflet"
+        },
+        "15": {
+            "rgb": [
+                102,
+                244,
+                250
+            ],
+            "class": "folded_leaflet"
+        },
+        "16": {
+            "rgb": [
+                224,
+                116,
+                101
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                241,
+                227,
+                29
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                34,
+                22,
+                27
+            ],
+            "class": "folded_leaflet"
+        },
+        "19": {
+            "rgb": [
+                59,
+                193,
+                144
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5l10713agtd3ak6": {
+        "1": {
+            "rgb": [
+                195,
+                129,
+                8
+            ],
+            "class": "leaflet"
+        },
+        "externalID": "TLI_E+K_180.jpg",
+        "2": {
+            "rgb": [
+                75,
+                85,
+                122
+            ],
+            "class": "folded_leaflet"
+        },
+        "3": {
+            "rgb": [
+                153,
+                44,
+                122
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                223,
+                32,
+                111
+            ],
+            "class": "folded_leaflet"
+        },
+        "5": {
+            "rgb": [
+                237,
+                123,
+                85
+            ],
+            "class": "folded_leaflet"
+        },
+        "6": {
+            "rgb": [
+                151,
+                0,
+                108
+            ],
+            "class": "folded_leaflet"
+        },
+        "7": {
+            "rgb": [
+                90,
+                90,
+                0
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                129,
+                60,
+                246
+            ],
+            "class": "folded_leaflet"
+        },
+        "9": {
+            "rgb": [
+                88,
+                137,
+                233
+            ],
+            "class": "folded_leaflet"
+        },
+        "10": {
+            "rgb": [
+                111,
+                30,
+                242
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                243,
+                83,
+                70
+            ],
+            "class": "folded_leaflet"
+        },
+        "12": {
+            "rgb": [
+                247,
+                41,
+                34
+            ],
+            "class": "folded_leaflet"
+        },
+        "13": {
+            "rgb": [
+                115,
+                0,
+                128
+            ],
+            "class": "leaflet"
+        },
+        "14": {
+            "rgb": [
+                121,
+                116,
+                235
+            ],
+            "class": "petiole"
+        }
+    },
+    "clzbep7n3a5l207135hjbw9k8": {
+        "1": {
+            "rgb": [
+                68,
+                197,
+                86
+            ],
+            "class": "folded_leaflet"
+        },
+        "externalID": "TLI_E+K_160.jpg",
+        "2": {
+            "rgb": [
+                186,
+                216,
+                215
+            ],
+            "class": "leaflet"
+        },
+        "3": {
+            "rgb": [
+                174,
+                235,
+                217
+            ],
+            "class": "folded_leaflet"
+        },
+        "4": {
+            "rgb": [
+                74,
+                61,
+                33
+            ],
+            "class": "leaflet"
+        },
+        "5": {
+            "rgb": [
+                96,
+                21,
+                150
+            ],
+            "class": "leaflet"
+        },
+        "6": {
+            "rgb": [
+                146,
+                26,
+                175
+            ],
+            "class": "leaflet"
+        },
+        "7": {
+            "rgb": [
+                195,
+                197,
+                82
+            ],
+            "class": "folded_leaflet"
+        },
+        "8": {
+            "rgb": [
+                130,
+                160,
+                177
+            ],
+            "class": "leaflet"
+        },
+        "9": {
+            "rgb": [
+                147,
+                234,
+                196
+            ],
+            "class": "leaflet"
+        },
+        "10": {
+            "rgb": [
+                27,
+                10,
+                17
+            ],
+            "class": "folded_leaflet"
+        },
+        "11": {
+            "rgb": [
+                254,
+                147,
+                25
+            ],
+            "class": "leaflet"
+        },
+        "12": {
+            "rgb": [
+                65,
+                136,
+                85
+            ],
+            "class": "leaflet"
+        },
+        "13": {
+            "rgb": [
+                92,
+                11,
+                132
+            ],
+            "class": "folded_leaflet"
+        },
+        "14": {
+            "rgb": [
+                128,
+                29,
+                162
+            ],
+            "class": "pinched_leaflet"
+        },
+        "15": {
+            "rgb": [
+                131,
+                73,
+                152
+            ],
+            "class": "leaflet"
+        },
+        "16": {
+            "rgb": [
+                102,
+                154,
+                84
+            ],
+            "class": "folded_leaflet"
+        },
+        "17": {
+            "rgb": [
+                181,
+                52,
+                117
+            ],
+            "class": "folded_leaflet"
+        },
+        "18": {
+            "rgb": [
+                170,
+                83,
+                196
+            ],
+            "class": "leaflet"
+        },
+        "19": {
+            "rgb": [
+                216,
+                223,
+                74
+            ],
+            "class": "petiole"
+        }
     }
 }

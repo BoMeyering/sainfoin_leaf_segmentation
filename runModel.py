@@ -254,7 +254,7 @@ imageDimentions = config['imageDimentions']
 #get the model
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 model = get_model_instance_segmentation(num_classes,config['modelPath'])
-#model.to(device)
+model.to(device)
 
 imageList,imageNames = load_images_from_folder(config['inputFolderPath'])
 transformedImages = TransformImages(imageList,imageDimentions,device)

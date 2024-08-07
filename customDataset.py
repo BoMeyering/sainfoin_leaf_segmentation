@@ -113,9 +113,9 @@ class CustomDataset(torch.utils.data.Dataset):
                 #assign an integer lable to each class
                 intLabel = 0
                 if strLabel == 'leaflet': intLabel = 1
-                elif strLabel == 'petiole': intLabel = 2
-                elif strLabel == 'folded_leaflet': intLabel = 3
-                elif strLabel == 'pinched_leaflet': intLabel = 4
+                elif strLabel == 'petiole': intLabel = 0
+                elif strLabel == 'folded_leaflet': intLabel = 2
+                elif strLabel == 'pinched_leaflet': intLabel = 2
                 #store the class in the label tensor at index n
 
                 labelTensor[n] = intLabel
