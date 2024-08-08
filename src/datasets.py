@@ -8,12 +8,8 @@ import torchvision.tv_tensors._mask
 import albumentations as A
 
 
-#displays a cv2 image used for debuging
-def show_img(img):
-     cv2.namedWindow('test', cv2.WINDOW_NORMAL)
-     cv2.imshow('test', img)
-     cv2.waitKey()
-     cv2.destroyAllWindows()
+
+
 
 #splits the images into vaidation and training sets
 def splitData(rgbJson):
@@ -213,4 +209,3 @@ class CustomDataset(torch.utils.data.Dataset):
 
         
         return torchImage, target
-

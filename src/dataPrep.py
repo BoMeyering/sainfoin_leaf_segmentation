@@ -1,10 +1,10 @@
 import labelbox as lb
-import urllib.request
-from PIL import Image
 import json
-import pandas as pd
-from io import StringIO
 import requests
+import cv2
+import json
+import numpy as np
+import tqdm
 
 
 # Callback used for JSON Converter
@@ -33,7 +33,7 @@ def json_stream_handler(output: lb.JsonConverterOutput, jsonFile, imagePath = 'd
 
 #retrieves images from label box given a project ID and stores them at imageFolderPath. A ndjson file will be made at jsonPath.
 #silent prevents printing to the console
-def GetImages(projectID,imageFolderPath,jsonPath, silent = False):
+def DownloadImages(projectID,imageFolderPath,jsonPath, silent = False):
   #Connect to the API using the API key
   API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbGhpNmJiY2swMGt5MDd3YzlncnA1Z2g4Iiwib3JnYW5pemF0aW9uSWQiOiJjbGhpNmJiYzMwMGt4MDd3Y2Q0aG84cnhoIiwiYXBpS2V5SWQiOiJjbHdqbHFja3YwMDZvMDd4YWVtYWFmb2IyIiwic2VjcmV0IjoiNjNkYWQwNGViYzg2NDViOGYzYTY4ZjMwYTNjNTI4MTQiLCJpYXQiOjE3MTY0ODk4MzksImV4cCI6MjM0NzY0MTgzOX0.DGGptdFGhM8VWn7QyGRQC_JiQvb91KfCPP08zroX9GA"
   client = lb.Client(api_key=API_KEY)
@@ -129,8 +129,35 @@ def MakeImageJson(inputJsonPath, outputJsonPath,silent = False):
   if not silent:
     print(f'wrote {lines} lines to data/processed/rgbPairs.json')
 
-#call both functions to get the images and create the rgbJson file
-GetImages(projectID='clixbl663083u07zxhfgxgfio', imageFolderPath='data/raw/segmentedImages/', jsonPath='data/raw/exportProject.ndjson')
-MakeImageJson(inputJsonPath='data/raw/exportProject.ndjson', outputJsonPath='data/processed/rgbPairs.json')
 
-
+#creates a csv in the form imageID,index,x1,y1,x2,y2
+#It will save to csvSavePath and requires the rgbjson and rgbimage folder
+def makeBoundingBoxes(imageSourceFolder, jsonSourceFile, csvSavePath,silent = True):
+    #load the rgb dictionary
+    rgbDictionary = json.load(open(jsonSourceFile,'r'))
+    #create the csv file for writing
+    csv = open(csvSavePath,'w')
+    #for each image ID
+    for id in tqdm.tqdm(rgbDictionary):
+        #import the image corosponding to the ID from the dictionary
+        image = cv2.imread(imageSourceFolder + id + '.png',flags= cv2.IMREAD_COLOR)
+        #for each index AKA annotati on
+        for index in rgbDictionary[id]:
+            if not isinstance(rgbDictionary[id][index],str):
+                #get the color of the anotation
+                rgb = rgbDictionary[id][index]['rgb']
+                if not silent:
+                    print(rgbDictionary[id][index]['class'])
+                bgr = rgb[::-1]
+                bgr = np.array(bgr,dtype=np.uint8)
+                # create a black and white mask image that contains only the anotation
+                mask = cv2.inRange(image, bgr, bgr)
+                #extract bounding rectanges 
+                x,y,w,h = cv2.boundingRect(mask)
+                #convert x,y,w,h to x1,y1,x2,y2
+                x2 = x+w
+                y2 = y+h
+                #write the line to the csv file
+                csv.write(f'{id},{index},{x},{y},{x2},{y2}\n')
+                if not silent:
+                    print(f'X:{x} Y:{y} W:{w} h:{h}')

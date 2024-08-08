@@ -37,3 +37,19 @@ new class
     train
     trainStep
     trainEpoch
+
+
+dataPrep.py
+    GetImages
+    MakeJson
+    MakeBoundingBoxes
+model.py
+    TrainModel
+    RunModel
+datasets.py
+    SplitData
+    CustomDataset
+utils.py
+    ShowImage
+    ReadConfig
+

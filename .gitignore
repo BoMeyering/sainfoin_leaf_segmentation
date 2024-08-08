@@ -162,6 +162,7 @@ cython_debug/
 #Image folders
 data/raw/
 data/processed/
+qrDetection/
 
 #model folders
 model_checkpoints/

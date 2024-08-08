@@ -1,9 +1,9 @@
 {
-    "numberOfClasses" : 4,
+    "numberOfClasses" : 2,
     "imageDimentions" : 1024,
-    "modelPath" : "model_checkpoints/1024_LeafletClasifiedV5_20.tar",
+    "modelPath" : "model_checkpoints/1024_MergedBadV2_Final.pt",
     "inputFolderPath" : "data/raw/run",
-    "outputFolderPath" : "outputs/processed/",
+    "outputFolderPath" : "outputs/",
     "Rainbow" : false,
     "filtering":{
         "boundingBoxMinScore" : 0.25,
