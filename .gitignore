@@ -165,6 +165,7 @@ data/processed/
 qrDetection/
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+!model_checkpoints/.gitkeep
 !qrDetection/input/.gitkeep
 !qrDetection/output/.gitkeep
 
