@@ -62,5 +62,5 @@ qrcode.py -- runs a GUI for extracting qr codes from imges and renameing the ima
 UI.py -- runs a CLI tool for setting up and running models.  
 
 
-
-![image](./readMeImages/test.png)
+## Data flow diagram ##
+![image](./readMeImages/dataFlow.png)
