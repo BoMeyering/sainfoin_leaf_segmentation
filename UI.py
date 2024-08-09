@@ -1,7 +1,5 @@
 from src.models import TrainModel, RunModel
 from src.dataPrep import DownloadImages, MakeImageJson, makeBoundingBoxes
-from src.utils import QRCodeRename
-
 
 def getCommands():
     numCommands = []
@@ -13,8 +11,7 @@ def getCommands():
     2) Make the bounding box csv file
     3) Train a model
     4) Run a model
-    5) Detect QR codes
-    6) exit\n''')
+    5) exit\n''')
 
         commands = i.split(',')
 
@@ -42,7 +39,5 @@ while True:
         elif cmd == 4:
             RunModel()
         elif cmd == 5:
-            QRCodeRename()
-        elif cmd == 6:
             exit()
 

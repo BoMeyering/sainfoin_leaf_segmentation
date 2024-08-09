@@ -45,7 +45,7 @@ class CustomDataset(torch.utils.data.Dataset):
     #   used for training validation spliting
     #mapDict: dictionary maping indicies to image IDs
     #validation: if true augmentations are disabled
-    def __init__(self,boundingBoxes,rgbJson,imageFolder, maskFolder, indexSubset, mapDict,validation=False):
+    def __init__(self,boundingBoxes,rgbJson,imageFolder, maskFolder, indexSubset, mapDict, validation=False, imageSize = 1024):
         #read CSV to a panda with column names
         self.boundingBoxes = pd.read_csv(boundingBoxes,names=['id','index','x1','y1','x2','y2'])
         self.rgbPairs = json.load(open(rgbJson,'r'))
@@ -54,6 +54,7 @@ class CustomDataset(torch.utils.data.Dataset):
         self.subSet = indexSubset
         self.mapDict = mapDict
         self.validation = validation
+        self.targetImageSize = imageSize
     def __len__(self):
         return len(self.subSet)
         #return 24
@@ -122,13 +123,12 @@ class CustomDataset(torch.utils.data.Dataset):
                 i = 0
 
         #set the size to scale images to 1024 works well, trains faster with 512
-        target_img_size = 1024
         #if the dataset is for validation only normalize and rescale the image
         if self.validation:
             transform = A.Compose(
             [
                 A.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
-                A.Resize(height=target_img_size, width=target_img_size, p=1),   
+                A.Resize(height=self.targetImageSize, width=self.targetImageSize, p=1),   
             ],
             p=1.0,
             # is_check_shapes=False,
@@ -140,7 +140,7 @@ class CustomDataset(torch.utils.data.Dataset):
             transform = A.Compose(
             [
                 A.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
-                A.Resize(height=target_img_size, width=target_img_size, p=1),
+                A.Resize(height=self.targetImageSize, width=self.targetImageSize, p=1),
                 A.HorizontalFlip(p=0.5),
                 #probably redundent with A.Affine
                 A.RandomRotate90(p=.5),

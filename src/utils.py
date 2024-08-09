@@ -81,29 +81,5 @@ def LoadImagesFromFolder(folder):
     return images,imageNames
 
 
-def LoadQRImages(folder):
-    images = []
-    qrcodes = []
-    for filename in os.listdir(folder):
-        img = cv2.imread(os.path.join(folder,filename),flags=cv2.IMREAD_COLOR+cv2.IMREAD_IGNORE_ORIENTATION)
-        if img is not None:
-            qrcodes.append(img[0:768,0:1024])
-            images.append(img)
-    return images,qrcodes
-
-
-def QRCodeRename():
-    img,qrcodes = LoadQRImages('qrDetection/input')
-
-    detector = cv2.QRCodeDetector()
-    x = Image.fromarray(qrcodes[0])
-    displayImage = ui.image(x)
-    ui.run()
-    for i in range(len(qrcodes)):
-        retval, decoded_info, points, straight_qrcode = detector.detectAndDecodeMulti(qrcodes[i])
-        if(retval):
-            cv2.imwrite('qrDetection/output/' + decoded_info[0] + '.jpg',img[i])
-        else:
-            input("test")
 
             

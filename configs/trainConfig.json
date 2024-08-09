@@ -6,6 +6,7 @@
         "originalImages" : "data/raw/origionalImages/",
         "segmentedImages" : "data/raw/segmentedImages/"
     },
+    "numberOfClasses" : 3,
     "dataLoader" :
     {
         "training" :
