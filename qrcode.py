@@ -81,7 +81,7 @@ async def index():
         if img is not None:
             qrcode = (img[0:768,0:1024])
             retval, decoded_info, points, straight_qrcode = detector.detectAndDecodeMulti(qrcode)
-            if(retval):
+            if(retval and len(decoded_info[0]) > 2):
                 #displayImage.set_source(Image.fromarray(qrcode))
                 #displayImage.update()
                 
@@ -103,7 +103,7 @@ async def index():
                 appendString = '_0'
                 i = 1
                 while os.path.isfile('qrDetection/output/' + ts.getText() + appendString + '.jpg'):
-                    appendString = str(i)
+                    appendString = '_'+str(i)
                     i = i + 1
                 ui.notify("Image saved with name: " + ts.getText())
                 cv2.imwrite('qrDetection/output/' + ts.getText() + appendString + '.jpg',img)

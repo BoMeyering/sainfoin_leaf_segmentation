@@ -6,7 +6,6 @@ import os
 import torchvision.transforms.functional as F
 import albumentations as A
 from torchvision.utils import make_grid
-from nicegui import ui
 from PIL import Image
 
 
