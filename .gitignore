@@ -163,6 +163,10 @@ cython_debug/
 data/raw/
 data/processed/
 qrDetection/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!qrDetection/input/.gitkeep
+!qrDetection/output/.gitkeep
 
 #model folders
 model_checkpoints/
