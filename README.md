@@ -1,6 +1,15 @@
 # Sainfoin Leaf Segmentation
 
 ## Dependencies: ##
+Install the following in a python environment:  
+pip install torchvision  
+pip install -U albumentations  
+pip install pandas  
+pip install -U scikit-learn  
+pip install pycocotools  
+pip install ensemble_boxes  
+pip install labelbox  
+pip install nicegui (only for QR code extraction)  
 
 
 ## Training and Running the model: ##
@@ -32,6 +41,25 @@ The model saves as a .pt file on intervals and at the end off training. It also 
 
 
 ## File Summary: ##
+configs/runConfig.json -- configuration for running models.  
+configs/trainConfig.json -- configuraiton for training models.  
+data/processed/boundingBoxes.csv -- bounding boxes extracted from the image masks.  
+data/processed/rgbPairs.json --  rgb values associated with each annotation generated from exportProject.ndjson.  
+data/raw/origionalImages/ -- place the original images here.  
+data/raw/run/ -- place images her to run inference on.  
+data/raw/segmentedImages/ -- location that labelbox mask images are downloaded to.  
+data/raw/exportProject.ndjson -- anotation data downloaded from labelbox.  
+model_checkpoints/ -- location model checkpoints are saved to.  
+outputs/ -- location images are saved to after inference.  
+qrDetection/input/ -- place images here to run qr code extraction on.  
+qrDetection/output/ -- renamed images are saved here.  
+src/dataPrep.py -- downloads images from labelbox and makes exportProject.ndjson, rgbPairs.json, and boundingBoxes.csv.  
+src/datasets.py -- splits the training images for training and validation and defines a custom dataset that is ued to feed training data to the model.  
+src/models.py -- creates, trains, loads, and runs models.  
+src/utils.py -- Utilites mostly related to file IO.  
+modelNotes.txt -- notes about several models trained on beocat.  
+qrcode.py -- runs a GUI for extracting qr codes from imges and renameing the images.  
+UI.py -- runs a CLI tool for setting up and running models.  
 
 
 
