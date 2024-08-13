@@ -2,7 +2,19 @@
 
 ## Dependencies: ##
 Install the following in a python environment:  
-pip install torchvision  
+
+https://realpython.com/intro-to-pyenv/
+pyenv install 3.11.8
+pip install virtualenv
+pyenv virtualenv 3.11.8 <env_name_here>
+# go to /
+pyenv local <env_name>
+pip install -r requirements.txt
+```
+pip install virtualenv
+pip freeze > requirements.txt
+```
+pip install torchvision albumentations pandas
 pip install -U albumentations  
 pip install pandas  
 pip install -U scikit-learn  
